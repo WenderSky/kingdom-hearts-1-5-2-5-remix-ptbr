@@ -18,7 +18,7 @@
 ## 🎮 Sobre
 
 Tradução **feita do zero**, a partir do texto em inglês de cada jogo.
-Tradução automátizada: cada fala foi passada uma a uma, e cada uma passou
+Tradução automatizada: cada fala foi passada uma a uma, e cada uma passou
 por uma régua que mede a largura da linha antes de ela entrar no jogo — 
 Infelizmente alguns textos acabam vazando da caixa.
 
