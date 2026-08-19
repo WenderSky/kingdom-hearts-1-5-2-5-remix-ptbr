@@ -17,10 +17,10 @@
 
 ## 🎮 Sobre
 
-Tradução **feita à mão, do zero**, a partir do texto em inglês de cada jogo.
-Nada de tradução automática: cada fala foi passada uma a uma, e cada uma passou
-por uma régua que mede a largura da linha antes de ela entrar no jogo — é o que
-evita texto vazando da caixa.
+Tradução **feita do zero**, a partir do texto em inglês de cada jogo.
+Tradução automátizada: cada fala foi passada uma a uma, e cada uma passou
+por uma régua que mede a largura da linha antes de ela entrar no jogo — 
+Infelizmente alguns textos acabam vazando da caixa.
 
 | jogo | trechos | o que está traduzido |
 |---|---:|---|
@@ -58,9 +58,9 @@ para **antes** de escrever qualquer coisa.
 
 ### Vídeos
 
-**Não tem instalador, e é de propósito:** extraia o zip e **arraste a pasta
-`STEAM` para dentro da pasta do jogo**, mandando substituir. O Windows funde as
-pastas sozinho e troca só os dez arquivos. No Steam Deck é igual, pelo cabo.
+Extraia o zip e **arraste a pasta`STEAM` para dentro da pasta do jogo**, 
+mandando substituir. O Windows funde as pastas sozinho e troca só 
+os dez arquivos. No Steam Deck é igual, pelo cabo.
 
 ### ⚠️ Deixe o jogo em INGLÊS
 
@@ -78,8 +78,8 @@ Steam ▸ botão direito no jogo ▸ Propriedades ▸ Arquivos instalados ▸
 
 **O jogo não foi inteiramente revisado.** Traduzir 36 mil trechos é uma coisa;
 jogar os seis do começo ao fim conferindo cada tela é outra. O que dá para
-verificar por máquina — que nenhum texto vaza da caixa, que nenhum marcador de
-comando se perdeu, que todo caractere tem desenho na fonte — está limpo. O que
+verificar por máquina —  que nenhum marcador de comando se perdeu, 
+que todo caractere tem desenho na fonte — está limpo. O que
 depende de ver em jogo foi testado por amostragem.
 
 É possível encontrar uma frase que soa estranha no contexto, texto encostando
