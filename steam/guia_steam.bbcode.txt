@@ -1,38 +1,35 @@
 [h1]KINGDOM HEARTS HD 1.5+2.5 ReMIX — Tradução PT-BR[/h1]
 
-A coletânea inteira em português brasileiro. Os seis jogos, traduzidos à mão,
-do zero, a partir do texto em inglês: [b]36.562 trechos[/b] e
-[b]1.698.684 caracteres[/b].
+A coletânea inteira em português brasileiro: os seis jogos, [b]36.562
+trechos[/b] e [b]1.698.684 caracteres[/b].
 
-Nada de tradução automática. Cada fala foi passada uma a uma, e cada uma passou
-por uma régua que mede a largura da linha antes de ela entrar no jogo — é o que
-evita texto vazando da caixa.
+Tradução [b]feita do zero[/b], a partir do texto em inglês de cada jogo, e
+[b]automatizada[/b]: as ferramentas foram escritas para este projeto e abrem o
+formato de cada um, tiram o texto, medem a largura de cada linha na fonte do
+próprio jogo e devolvem tudo para o lugar. É o que torna possível tratar 36 mil
+trechos sem perder o controle do que entra — mas infelizmente alguns textos
+ainda acabam vazando da caixa.
 
 [hr][/hr]
 
 [h1]📥 Como instalar[/h1]
 
-São [b]dois arquivos[/b], e o segundo é opcional.
+[b]Um patch só traduz os seis jogos.[/b] Não há um pacote por jogo — são dois
+arquivos no total, e o segundo é opcional:
 
 [table]
 [tr][th]pacote[/th][th]tamanho[/th][th]o que faz[/th][/tr]
-[tr][td][b]KH_PTBR[/b][/td][td]18 MB[/td][td]traduz o texto dos seis jogos[/td][/tr]
+[tr][td][b]KH_PTBR[/b][/td][td]18 MB[/td][td]traduz o texto — a coletânea inteira de uma vez[/td][/tr]
 [tr][td][b]KH_Videos_PTBR[/b][/td][td]1,74 GB[/td][td]legenda os 10 vídeos que têm texto pintado na imagem[/td][/tr]
 [/table]
 
-[b]Windows:[/b] extraia a pasta e clique duas vezes em [b]Instalar.bat[/b].
+[b]Windows:[/b] extraia e clique duas vezes em [b]Instalar.bat[/b].
+[b]Steam Deck:[/b] extraia e rode [b]SteamDeck/instalar.sh[/b].
+[b]Os vídeos:[/b] não têm instalador — arraste a pasta [b]STEAM[/b] para dentro
+da pasta do jogo e mande substituir.
 
-[b]Steam Deck:[/b] copie a pasta para o Deck e, no modo Desktop, rode
-[code]chmod +x SteamDeck/instalar.sh && ./SteamDeck/instalar.sh[/code]
-
-[b]Na mão, sem instalador:[/b] o pacote de vídeos traz uma pasta [b]STEAM[/b]
-que é a cópia da árvore do jogo — arraste ela para dentro da pasta do jogo e
-mande substituir. O de texto precisa do [i]xdelta3[/i] (que vem junto), porque
-ele reconstrói arquivos de vários GB a partir de um patch de alguns KB; o
-[i]manifesto.json[/i] lista comando por comando.
-
-[b]⚠️ Deixe o jogo em INGLÊS.[/b] É o slot que a tradução ocupa. Em qualquer
-outro idioma, o texto sai no original.
+[b]⚠️ Deixe o jogo em INGLÊS.[/b] É o slot que a tradução ocupa: em qualquer
+outro idioma o texto sai no original. É a única coisa que você precisa lembrar.
 
 [b]Para desinstalar:[/b] Steam ▸ botão direito no jogo ▸ Propriedades ▸
 Arquivos instalados ▸ [b]Verificar integridade dos arquivos[/b].
@@ -42,10 +39,10 @@ Arquivos instalados ▸ [b]Verificar integridade dos arquivos[/b].
 [h1]⚠️ Leia antes de jogar[/h1]
 
 [b]O jogo não foi inteiramente revisado.[/b] Traduzir 36 mil trechos é uma
-coisa; jogar os seis do começo ao fim conferindo cada tela é outra. O que foi
-verificado por máquina — que nenhum texto vaza da caixa, que nenhum marcador de
-comando se perdeu, que todo caractere tem desenho na fonte — está limpo. O que
-depende de ver em jogo foi testado por amostragem.
+coisa; jogar os seis do começo ao fim conferindo cada tela é outra. O que dá
+para verificar por máquina — que nenhum marcador de comando se perdeu, que todo
+caractere tem desenho na fonte — está limpo. O que depende de ver em jogo foi
+testado por amostragem.
 
 Então é bem possível encontrar:
 
@@ -61,10 +58,7 @@ propósito, e a próxima seção explica.
 [/list]
 
 [b]Nada disso quebra save nem trava o jogo.[/b] O patch mexe apenas em arquivos
-de texto e de imagem; a lógica do jogo não é tocada. Três bugs sérios
-apareceram durante o desenvolvimento — um crash no primeiro baú, outro depois
-do tutorial e um terceiro no parser do Birth by Sleep — e os três foram
-corrigidos, com ferramenta própria criada para que não voltem.
+de texto e de imagem; a lógica do jogo não é tocada.
 
 [b]Se achar algo, comente no guia[/b] com o print e onde foi. É assim que os
 erros que já foram corrigidos apareceram.
@@ -151,40 +145,57 @@ isso o texto diz "Comece escolhendo [i]Edit Deck[/i]".
 
 [h1]👑 KINGDOM HEARTS II FINAL MIX[/h1]
 
-[b]15.936 trechos — o maior da coletânea.[/b] História, o Diário do Grilo, os
-Relatórios de Ansem, tutoriais, síntese do Moogle, o Guia Gummi inteiro e os
-[b]comandos de reação[/b] (Subir, Descer, Contragolpe, Rodopio...).
+[b]15.936 trechos — o maior da coletânea, sozinho maior que os outros três
+somados.[/b] História completa dos quinze mundos, o Diário do Grilo inteiro
+(resumos, fichas de personagem e o bestiário de Heartless e Nobodies), os
+Relatórios de Ansem incluindo os secretos do Final Mix, as caixas de tutorial,
+a síntese do Moogle, o Coliseu e a Arena Inferior, o Bosque dos Cem Acres, os
+minijogos de Atlântica e o Guia Gummi por completo.
 
-[b]Uma armadilha que valeu a pena contar:[/b] a tabela de mensagens do KH2
-aponta só para a [b]primeira página[/b] de cada fala. O que vem depois são as
-telas seguintes, e o jogo as exibe — eram [b]3.458 falas[/b] escondidas, 170
-mil caracteres, que ficaram em inglês na primeira versão e só apareceram
-jogando. Estão traduzidas.
+Também estão em português os [b]comandos de reação[/b] — aqueles que aparecem
+na caixa verde no meio da luta: Subir, Descer, Contragolpe, Rodopio, Arremesso,
+Meteoro. São 159, e ficavam em inglês na primeira versão.
 
-[b]Fica em inglês:[/b] os nomes desenhados na interface, o texto pintado dentro
-das telas de tutorial de batalha, os nomes de Rota Gummi (rótulo curto de mapa,
-com teto apertado) e as sete mensagens de teste da Square, que não aparecem em
-jogo.
+[b]Fica em inglês:[/b]
 
-[b]Um caso sem saída:[/b] [i]Vault[/i] ficou em inglês porque é ao mesmo tempo
-um comando de reação e a sala do tesouro de Agrabah. "Cofre" serve à sala e não
-ao comando, e o arquivo não permite duas traduções para a mesma palavra.
+[list]
+[*][b]nome de item, magia, habilidade e Drive Form[/b] no menu — são imagem,
+como nos outros jogos;
+[*][b]o texto pintado dentro das telas de tutorial de batalha[/b] (as que
+ensinam Drive, comando de reação e Limit). A fala dessas telas está traduzida;
+o que está desenhado na textura, não;
+[*][b]os nomes de Rota Gummi[/b] ([i]Asteroid Sweep[/i], [i]Phantom Storm[/i]) —
+rótulo curto de mapa, com o espaço muito apertado;
+[*][b]as sete mensagens de teste da Square[/b] ([i]DUMMY[/i], [i]TEST444[/i]),
+que não aparecem em jogo;
+[*][b][i]Vault[/i][/b], e este é um caso sem saída: a mesma palavra é um
+comando de reação [b]e[/b] a sala do tesouro de Agrabah. "Cofre" serve à sala e
+não ao comando, e o formato do jogo não permite duas traduções para a mesma
+palavra. Ganhou a sala, que aparece no mapa e no menu.
+[/list]
 
 [hr][/hr]
 
-[h1]🎬 358/2 Days e Re:coded (os filmes)[/h1]
+[h1]🎬 KINGDOM HEARTS 358/2 Days e Re:coded[/h1]
 
-[b]4.494 trechos.[/b] Não são jogos: são as cenas em vídeo com a legenda
-desenhada pelo motor. Traduzidos por inteiro — as cenas, o [b]Diário do
-Roxas[/b] (as 59 entradas), os [b]Relatórios Secretos[/b], a jornada do
-Data-Sora e a enciclopédia do Re:coded.
+[b]4.494 trechos, os dois juntos.[/b] Não são jogos jogáveis nesta coletânea:
+são as cenas em vídeo, com a legenda desenhada pelo motor por cima.
 
-Também estão em português os [b]539 títulos de capítulo[/b], o menu de pausa e
-o aviso de auto-save — eles moram fora da pasta de mensagens e passaram batido
-na primeira versão.
+[b]358/2 Days:[/b] as cenas todas, o [b]Diário do Roxas[/b] (as 59 entradas), os
+[b]Relatórios Secretos[/b] dos outros membros da Organização e as fichas de
+personagem.
 
-[b]Fica em inglês:[/b] nada de relevante. Só os rótulos internos de arquivo de
-vídeo ([i]hd501[/i], [i]hd539[/i]...), que nenhum idioma traduz.
+[b]Re:coded:[/b] a jornada inteira do Data-Sora pelo mundo de dados, a
+enciclopédia e as telas de resumo de cena.
+
+[b]Nos dois:[/b] os [b]539 títulos de capítulo[/b], o menu de pausa, o menu de
+capítulos e o aviso de auto-save. Esses ficam fora da pasta de mensagens, num
+canto próprio do pacote, e apareciam em inglês na primeira versão.
+
+[b]Fica em inglês:[/b] os rótulos internos de arquivo de vídeo ([i]hd501[/i],
+[i]hd539[/i]) que aparecem numa lista de depuração e que nenhum idioma traduz;
+e o [b]nome dos jogos[/b] na tela de escolha da coletânea, que é imagem. Fora
+isso, não sobrou nada em inglês nestes dois.
 
 [hr][/hr]
 
@@ -213,12 +224,11 @@ espelho: [i]"Um sonho disperso que é como uma lembrança distante"[/i] vira
 sleep[/i] ficam como estão. E a rolagem de créditos continua em inglês: são
 cargos e nomes de equipe.
 
-Os vídeos são recodificados, mas com qualidade visualmente idêntica ao original
-(PSNR de 46 a 53 dB fora das legendas).
-
 [hr][/hr]
 
 [h1]❓ Perguntas rápidas[/h1]
+
+[b]Preciso baixar um patch para cada jogo?[/b] Não. Um patch só traduz os seis.
 
 [b]Estraga meu save?[/b] Não. O patch mexe só em arquivos de texto e imagem.
 
@@ -229,8 +239,7 @@ a ordem não importa.
 cada arquivo e recusa o que não reconhecer, então não há risco em tentar — só
 falta alguém tentar.
 
-[b]Funciona no Steam Deck?[/b] Sim, e há instalador próprio. No Deck, arrastar
-a pasta pelo cabo costuma ser mais rápido que abrir o Konsole.
+[b]Funciona no Steam Deck?[/b] Sim, e há instalador próprio.
 
 [b]Dá conquista/troféu normalmente?[/b] Sim. Nada relacionado a conquistas é
 tocado.
