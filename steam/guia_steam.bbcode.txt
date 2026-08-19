@@ -1,0 +1,268 @@
+[h1]KINGDOM HEARTS HD 1.5+2.5 ReMIX — Tradução PT-BR[/h1]
+
+A coletânea inteira em português brasileiro. Os seis jogos, traduzidos à mão,
+do zero, a partir do texto em inglês: [b]36.562 trechos[/b] e
+[b]1.698.684 caracteres[/b].
+
+Nada de tradução automática. Cada fala foi passada uma a uma, e cada uma passou
+por uma régua que mede a largura da linha antes de ela entrar no jogo — é o que
+evita texto vazando da caixa.
+
+[hr][/hr]
+
+[h1]📥 Como instalar[/h1]
+
+São [b]dois arquivos[/b], e o segundo é opcional.
+
+[table]
+[tr][th]pacote[/th][th]tamanho[/th][th]o que faz[/th][/tr]
+[tr][td][b]KH_PTBR[/b][/td][td]18 MB[/td][td]traduz o texto dos seis jogos[/td][/tr]
+[tr][td][b]KH_Videos_PTBR[/b][/td][td]1,74 GB[/td][td]legenda os 10 vídeos que têm texto pintado na imagem[/td][/tr]
+[/table]
+
+[b]Windows:[/b] extraia a pasta e clique duas vezes em [b]Instalar.bat[/b].
+
+[b]Steam Deck:[/b] copie a pasta para o Deck e, no modo Desktop, rode
+[code]chmod +x SteamDeck/instalar.sh && ./SteamDeck/instalar.sh[/code]
+
+[b]Na mão, sem instalador:[/b] o pacote de vídeos traz uma pasta [b]STEAM[/b]
+que é a cópia da árvore do jogo — arraste ela para dentro da pasta do jogo e
+mande substituir. O de texto precisa do [i]xdelta3[/i] (que vem junto), porque
+ele reconstrói arquivos de vários GB a partir de um patch de alguns KB; o
+[i]manifesto.json[/i] lista comando por comando.
+
+[b]⚠️ Deixe o jogo em INGLÊS.[/b] É o slot que a tradução ocupa. Em qualquer
+outro idioma, o texto sai no original.
+
+[b]Para desinstalar:[/b] Steam ▸ botão direito no jogo ▸ Propriedades ▸
+Arquivos instalados ▸ [b]Verificar integridade dos arquivos[/b].
+
+[hr][/hr]
+
+[h1]⚠️ Leia antes de jogar[/h1]
+
+[b]O jogo não foi inteiramente revisado.[/b] Traduzir 36 mil trechos é uma
+coisa; jogar os seis do começo ao fim conferindo cada tela é outra. O que foi
+verificado por máquina — que nenhum texto vaza da caixa, que nenhum marcador de
+comando se perdeu, que todo caractere tem desenho na fonte — está limpo. O que
+depende de ver em jogo foi testado por amostragem.
+
+Então é bem possível encontrar:
+
+[list]
+[*][b]uma frase que soa estranha no contexto[/b] — sem a cena na frente, uma
+fala curta pode ser traduzida no sentido errado;
+[*][b]texto encostando na borda da caixa[/b] — o português é mais comprido que
+o inglês, e em algumas caixas a folga é de um caractere;
+[*][b]um trecho ainda em inglês[/b] — sobretudo em menu de sistema, tela de
+depuração ou canto pouco visitado;
+[*][b]nome de item que aparece em inglês na descrição[/b] — isso é de
+propósito, e a próxima seção explica.
+[/list]
+
+[b]Nada disso quebra save nem trava o jogo.[/b] O patch mexe apenas em arquivos
+de texto e de imagem; a lógica do jogo não é tocada. Três bugs sérios
+apareceram durante o desenvolvimento — um crash no primeiro baú, outro depois
+do tutorial e um terceiro no parser do Birth by Sleep — e os três foram
+corrigidos, com ferramenta própria criada para que não voltem.
+
+[b]Se achar algo, comente no guia[/b] com o print e onde foi. É assim que os
+erros que já foram corrigidos apareceram.
+
+[hr][/hr]
+
+[h1]🌍 O que fica em inglês — em todos os jogos[/h1]
+
+[b]Termos da série:[/b] Keyblade, Heartless, Nobody, Kingdom Hearts, Moogle,
+munny, Struggle. São nomes que a série inteira usa e que todo jogador conhece.
+
+[b]Nome de item, magia, comando e Drive Form:[/b] Potion, Firaga, Valor Form,
+Zantetsuken. Estes [b]aparecem desenhados[/b] na interface, como imagem — não
+como texto. Traduzir só a descrição faria ela falar de "Poção" enquanto o menu
+mostra [i]Potion[/i]. A descrição, essa sim, está em português.
+
+[b]Nome próprio de mundo:[/b] Traverse Town, Hollow Bastion, Port Royal,
+Castle Oblivion, Radiant Garden. É endereço, não descrição. Já nome
+[b]descritivo[/b] traduz: [i]Cave of Wonders[/i] virou Caverna das Maravilhas,
+[i]The Great Maw[/i] virou A Grande Fenda.
+
+[b]Tela de título e rolagem de créditos:[/b] são imagem, e o nome do jogo e os
+nomes da equipe não se traduzem.
+
+[b]Dublagem brasileira, sempre:[/b] Horloge, Madame Samovar e Zip · Huguinho,
+Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
+Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é
+o mesmo nos quatro jogos em que ele aparece: [i]"Guarda bem isso, hein?"[/i]
+
+[hr][/hr]
+
+[h1]🗝️ KINGDOM HEARTS FINAL MIX[/h1]
+
+[b]5.975 trechos.[/b] História completa, itens, lojas, baús, o Diário do Grilo
+Falante inteiro, menus e naves Gummi.
+
+[b]Fica em inglês:[/b] os nomes de item e magia no menu, o nome da sala no topo
+da tela e a tela de título — todos são [b]imagem[/b]. A tela de título chegou a
+ser redesenhada em português e foi [b]revertida de propósito[/b]: nos outros
+cinco jogos ela continua em inglês, e só o KH1 traduzido deixava a coletânea
+desencontrada.
+
+[b]Duas caixas de diálogo ficam com o texto justo[/b], encostando na borda.
+Encurtar mais quebraria a concordância ou o nome de um mundo.
+
+[hr][/hr]
+
+[h1]🃏 KINGDOM HEARTS Re:Chain of Memories[/h1]
+
+[b]3.373 trechos.[/b] História das duas campanhas, cartas, fichas de inimigo e
+menus.
+
+[b]Fica em inglês:[/b] [i]NEW GAME[/i], [i]LOAD[/i], [i]THEATER[/i] na tela de
+título, os rótulos do HUD de batalha e as telas de ajuda. São [b]193 arquivos
+de arte[/b] com o texto desenhado dentro — o maior deles sozinho tem 419 MB. É
+trabalho de redesenho, não de tradução.
+
+[b]Algumas caixas ficam com o texto colado na borda.[/b] A largura do balão é
+fixa e o português é mais comprido; onde encurtar estragaria a frase,
+preferiu-se o português correto.
+
+[hr][/hr]
+
+[h1]🌅 KINGDOM HEARTS Birth by Sleep FINAL MIX[/h1]
+
+[b]6.784 trechos.[/b] As três campanhas, os Relatos do Xehanort, missões,
+Arena, Command Board e os resumos de história.
+
+[b]Bônus:[/b] as [b]13 telas de ajuda[/b] com caixa de aviso foram
+[b]redesenhadas[/b] em português. A fonte dessas telas não existe em arquivo
+nenhum do jogo — ela foi recortada letra por letra das próprias imagens, e o
+que faltava veio das versões alemã, espanhola e francesa.
+
+[b]Fica em inglês:[/b] o [b]menu de pausa[/b] ([i]Resume[/i], [i]Skip Scene[/i])
+e o [b]menu principal[/b] ([i]Command Decks[/i], [i]Items[/i], [i]Abilities[/i],
+[i]D-Links[/i]). Estes dois são texto, não imagem — dá para fazer, e o caminho
+já está mapeado. Ficam para uma versão futura.
+
+Os rótulos dentro das capturas de menu das telas de ajuda também ficaram em
+inglês [b]de propósito[/b]: são a foto de um menu que continua em inglês. Por
+isso o texto diz "Comece escolhendo [i]Edit Deck[/i]".
+
+[hr][/hr]
+
+[h1]👑 KINGDOM HEARTS II FINAL MIX[/h1]
+
+[b]15.936 trechos — o maior da coletânea.[/b] História, o Diário do Grilo, os
+Relatórios de Ansem, tutoriais, síntese do Moogle, o Guia Gummi inteiro e os
+[b]comandos de reação[/b] (Subir, Descer, Contragolpe, Rodopio...).
+
+[b]Uma armadilha que valeu a pena contar:[/b] a tabela de mensagens do KH2
+aponta só para a [b]primeira página[/b] de cada fala. O que vem depois são as
+telas seguintes, e o jogo as exibe — eram [b]3.458 falas[/b] escondidas, 170
+mil caracteres, que ficaram em inglês na primeira versão e só apareceram
+jogando. Estão traduzidas.
+
+[b]Fica em inglês:[/b] os nomes desenhados na interface, o texto pintado dentro
+das telas de tutorial de batalha, os nomes de Rota Gummi (rótulo curto de mapa,
+com teto apertado) e as sete mensagens de teste da Square, que não aparecem em
+jogo.
+
+[b]Um caso sem saída:[/b] [i]Vault[/i] ficou em inglês porque é ao mesmo tempo
+um comando de reação e a sala do tesouro de Agrabah. "Cofre" serve à sala e não
+ao comando, e o arquivo não permite duas traduções para a mesma palavra.
+
+[hr][/hr]
+
+[h1]🎬 358/2 Days e Re:coded (os filmes)[/h1]
+
+[b]4.494 trechos.[/b] Não são jogos: são as cenas em vídeo com a legenda
+desenhada pelo motor. Traduzidos por inteiro — as cenas, o [b]Diário do
+Roxas[/b] (as 59 entradas), os [b]Relatórios Secretos[/b], a jornada do
+Data-Sora e a enciclopédia do Re:coded.
+
+Também estão em português os [b]539 títulos de capítulo[/b], o menu de pausa e
+o aviso de auto-save — eles moram fora da pasta de mensagens e passaram batido
+na primeira versão.
+
+[b]Fica em inglês:[/b] nada de relevante. Só os rótulos internos de arquivo de
+vídeo ([i]hd501[/i], [i]hd539[/i]...), que nenhum idioma traduz.
+
+[hr][/hr]
+
+[h1]🎥 Os vídeos legendados (pacote separado)[/h1]
+
+Quase todo vídeo da coletânea recebe legenda do próprio jogo, e ela já vem
+traduzida no patch de texto. [b]Dez vídeos são a exceção[/b]: neles as frases
+estão pintadas na imagem, em inglês, e não existem em arquivo de texto nenhum.
+
+[table]
+[tr][th]jogo[/th][th]vídeos[/th][/tr]
+[tr][td]KINGDOM HEARTS FINAL MIX[/td][td]abertura, créditos e final[/td][/tr]
+[tr][td]Re:Chain of Memories[/td][td]abertura e final secreto[/td][/tr]
+[tr][td]Birth by Sleep FINAL MIX[/td][td][i]Blank Points[/i], o vídeo secreto[/td][/tr]
+[tr][td]KINGDOM HEARTS II FINAL MIX[/td][td]abertura, créditos e os dois finais secretos[/td][/tr]
+[/table]
+
+Onde a frase aparece sobre fundo preto, o português entra [b]no lugar dela[/b].
+Onde aparece sobre a cena, cobrir apagaria imagem — aí vai legenda embaixo.
+
+O poema que abre o KINGDOM HEARTS II se inverte na tela, e a tradução mantém o
+espelho: [i]"Um sonho disperso que é como uma lembrança distante"[/i] vira
+[i]"Uma lembrança distante que é como um sonho disperso"[/i].
+
+[b]O nome do jogo não se traduz[/b] — [i]KINGDOM HEARTS[/i] e [i]Birth by
+sleep[/i] ficam como estão. E a rolagem de créditos continua em inglês: são
+cargos e nomes de equipe.
+
+Os vídeos são recodificados, mas com qualidade visualmente idêntica ao original
+(PSNR de 46 a 53 dB fora das legendas).
+
+[hr][/hr]
+
+[h1]❓ Perguntas rápidas[/h1]
+
+[b]Estraga meu save?[/b] Não. O patch mexe só em arquivos de texto e imagem.
+
+[b]Posso instalar só a tradução, sem os vídeos?[/b] Pode. São independentes, e
+a ordem não importa.
+
+[b]Funciona na Epic?[/b] Não foi testado. O instalador confere o SHA-256 de
+cada arquivo e recusa o que não reconhecer, então não há risco em tentar — só
+falta alguém tentar.
+
+[b]Funciona no Steam Deck?[/b] Sim, e há instalador próprio. No Deck, arrastar
+a pasta pelo cabo costuma ser mais rápido que abrir o Konsole.
+
+[b]Dá conquista/troféu normalmente?[/b] Sim. Nada relacionado a conquistas é
+tocado.
+
+[b]E se a Steam atualizar o jogo?[/b] A atualização devolve os arquivos
+originais e a tradução some. É só rodar o instalador de novo.
+
+[hr][/hr]
+
+[h1]🙏 Créditos[/h1]
+
+[b]Tradução, ferramentas, fontes e legendagem de vídeo:[/b] [b]Wender_sky[/b]
+
+Feita do zero, sem partir de nenhuma tradução existente. As traduções de
+terceiros que já circulavam serviram apenas como [b]referência técnica[/b] —
+para entender formato de arquivo, fonte e empacotamento —, nunca como fonte de
+texto.
+
+[b]Ferramentas de terceiros usadas:[/b]
+[list]
+[*][b]OpenKH[/b] — extração dos pacotes .hed/.pkg e a lista de nomes de arquivo;
+[*][b]xdelta3[/b] — os patches binários que reconstroem arquivos de vários GB
+a partir de alguns KB;
+[*][b]FFmpeg[/b] — legendagem e recodificação dos vídeos.
+[/list]
+
+[b]Nomes em português[/b] seguem a dublagem brasileira dos filmes da Disney e
+os títulos oficiais das canções.
+
+[b]KINGDOM HEARTS[/b] é uma obra da Square Enix e da Disney. Esta é uma
+tradução feita por fã, sem fins lucrativos, distribuída como patch — não
+contém nenhum arquivo do jogo original.
+
+[i]"Há muitos mundos, mas eles dividem o mesmo céu — um só céu, um só
+destino."[/i]

@@ -1,0 +1,13 @@
+# Os pacotes fechados vão para a página de Releases, não para o histórico.
+# O de vídeo tem 1,74 GB — passa do limite de 100 MiB por arquivo do Git.
+*.zip
+*.mp4
+
+# Sobras de instalação
+*.original
+*.backup
+
+# Lixo de sistema
+Thumbs.db
+desktop.ini
+.DS_Store

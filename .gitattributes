@@ -1,0 +1,19 @@
+# As quebras de linha aqui não são preferência: são requisito de funcionamento.
+# O bash do Steam Deck aborta com "$'\r': command not found" se o .sh vier com
+# CRLF, e é exatamente isso que o autocrlf do Git no Windows faria.
+
+* text=auto eol=lf
+
+*.sh  text eol=lf
+*.bat text eol=crlf
+
+# O .ps1 é lido pelo PowerShell 5.1, que interpreta o arquivo como ANSI quando
+# não há BOM. Ele é ASCII puro de propósito — um travessão dentro de uma string
+# vira três bytes soltos e o parser morre com "Token inesperado".
+*.ps1 text eol=crlf
+
+*.xdelta binary
+*.exe    binary
+*.png    binary
+*.zip    binary
+*.mp4    binary
