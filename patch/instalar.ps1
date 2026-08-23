@@ -20,6 +20,76 @@ function Hash256($caminho) {
     (Get-FileHash -Algorithm SHA256 -LiteralPath $caminho).Hash.ToLower()
 }
 
+function Hash1($caminho) {
+    (Get-FileHash -Algorithm SHA1 -LiteralPath $caminho).Hash.ToLower()
+}
+
+# ---------------------------------------------------- o que a Steam entrega
+# Quando um arquivo do jogo nao bate com o original nem com o traduzido, a
+# pergunta e' "voce mexeu nele" ou "seu jogo e' de outra versao?". Quem sabe
+# responder e' a propria Steam: o `depotcache\2552433_*.manifest` do jogador
+# lista, para cada arquivo do deposito, nome, tamanho e o **SHA-1 do arquivo
+# inteiro** (conferido em tres arquivos desta instalacao).
+#
+# O .manifest e' protobuf. Depois do nome vem, em sequencia:
+#   campo 2 tamanho (varint)   3 flags   4 SHA-1 do nome   5 SHA-1 do conteudo
+#
+# Le-se o arquivo como ASCII so' para achar o nome: cada byte vira um char, o
+# indice e' o mesmo, e ai' o parse continua nos bytes crus.
+function DepotEntrada($destino) {
+    try {
+        $steam = (Get-ItemProperty "HKCU:\Software\Valve\Steam" -Name SteamPath -ErrorAction Stop).SteamPath
+    } catch { return $null }
+    $cache = Join-Path $steam "depotcache"
+    if (-not (Test-Path $cache)) { return $null }
+    $arq = Get-ChildItem -LiteralPath $cache -Filter "2552433_*.manifest" -ErrorAction SilentlyContinue |
+           Sort-Object LastWriteTime -Descending | Select-Object -First 1
+    if (-not $arq) { return $null }
+    try {
+        $bytes = [System.IO.File]::ReadAllBytes($arq.FullName)
+        $texto = [System.Text.Encoding]::ASCII.GetString($bytes)
+    } catch { return $null }
+    $nome = "Image\" + ($destino -replace '/', '\')
+    $i = $texto.IndexOf($nome)
+    if ($i -lt 0) { return $null }
+    $j = $i + $nome.Length
+    $campos = @{}
+    while ($j -lt $bytes.Length) {
+        $chave = 0; $desl = 0
+        while ($j -lt $bytes.Length) {
+            $b = $bytes[$j]; $j++
+            $chave = $chave -bor (($b -band 0x7f) -shl $desl); $desl += 7
+            if (-not ($b -band 0x80)) { break }
+        }
+        $campo = $chave -shr 3; $tipo = $chave -band 7
+        if ($campo -gt 6 -or $campos.ContainsKey($campo)) { break }
+        if ($tipo -eq 0) {
+            $v = [uint64]0; $desl = 0
+            while ($j -lt $bytes.Length) {
+                $b = $bytes[$j]; $j++
+                $v = $v -bor ([uint64]($b -band 0x7f) -shl $desl); $desl += 7
+                if (-not ($b -band 0x80)) { break }
+            }
+            $campos[$campo] = $v
+        } elseif ($tipo -eq 2) {
+            $ln = 0; $desl = 0
+            while ($j -lt $bytes.Length) {
+                $b = $bytes[$j]; $j++
+                $ln = $ln -bor (($b -band 0x7f) -shl $desl); $desl += 7
+                if (-not ($b -band 0x80)) { break }
+            }
+            if ($ln -eq 20 -and ($j + 19) -lt $bytes.Length) {
+                $campos[$campo] = (($bytes[$j..($j + 19)] |
+                    ForEach-Object { $_.ToString("x2") }) -join "")
+            }
+            $j += $ln
+        } else { break }
+        if ($campo -eq 5) { break }
+    }
+    if (-not $campos.ContainsKey(2)) { return $null }
+    return @{ tamanho = [int64]$campos[2]; sha1 = $campos[5] }
+}
+
 # ------------------------------------------------------------- progresso
 # Tudo aqui e' medido em BYTES, nao em arquivos: o kh2_fifth.pkg tem 10,8 GB e
 # o kh1_first.hed tem 19 KB. Uma barra por contagem de arquivo andaria depressa
@@ -196,17 +266,73 @@ foreach ($a in $manifesto.arquivos) {
         $fazer += @{ arquivo = $a; alvo = $alvo; fonte = $bkp }
         continue
     }
+    # ...ou o jogador tem uma VERSAO ANTERIOR desta traducao instalada. Sem
+    # isto ele so' teria a saida de rebaixar 14 GB pela Steam para depois
+    # aplicar o patch inteiro de novo: o arquivo dele nao e' o de fabrica nem
+    # o traduzido desta versao, e o instalador o recusava como "DIFERENTE".
+    $atualizacao = $null
+    foreach ($v in @($a.atualizacoes)) {
+        if ($v -and $v.de -eq $h) { $atualizacao = $v; break }
+    }
+    if ($atualizacao) {
+        $fazer += @{ arquivo = $a; alvo = $alvo; fonte = $alvo;
+                     delta = $atualizacao.delta; versao = $atualizacao.versao }
+        continue
+    }
     FecharBarra ""
     Write-Host "  DIFERENTE   $($a.destino)" -ForegroundColor Red
     Write-Host ""
     Write-Host "  Esse arquivo nao e' o original nem o traduzido." -ForegroundColor Red
-    Write-Host "  Se voce tem outro mod instalado, remova primeiro." -ForegroundColor Yellow
-    Write-Host "  Ou use 'Verificar integridade dos arquivos' na Steam" -ForegroundColor Yellow
-    Write-Host "  para voltar ao original e rode este instalador de novo." -ForegroundColor Yellow
+    # o tamanho ja' separa "download pela metade" de "conteudo trocado", e e'
+    # de graca: um arquivo de 10,8 GB truncado e' o caso mais comum
+    $tam = (Get-Item -LiteralPath $alvo).Length
+    if ($tam -lt $a.bytes_original) {
+        Write-Host ("  Ele tem {0:N0} bytes e o de fabrica tem {1:N0}: esta' INCOMPLETO." -f `
+            $tam, $a.bytes_original) -ForegroundColor Red
+        Write-Host "  O download da Steam nao terminou, ou faltou espaco em disco." -ForegroundColor Yellow
+    } elseif ($tam -ne $a.bytes_original) {
+        Write-Host ("  Ele tem {0:N0} bytes e o de fabrica tem {1:N0}." -f `
+            $tam, $a.bytes_original) -ForegroundColor Red
+    } else {
+        Write-Host "  O tamanho e' o de fabrica; o conteudo e' que nao e'." -ForegroundColor Red
+    }
+    $depot = DepotEntrada $a.destino
+    if ($depot) {
+        if ($depot.tamanho -ne $a.bytes_original) {
+            Write-Host ""
+            Write-Host "  A Steam diz que o original deste arquivo tem" -ForegroundColor Yellow
+            Write-Host ("  {0:N0} bytes nesta maquina: seu jogo esta' numa VERSAO" -f $depot.tamanho) -ForegroundColor Yellow
+            Write-Host "  diferente da que este patch conhece. Avise o autor da" -ForegroundColor Yellow
+            Write-Host "  traducao -- nenhum patch vai servir ate' ele refazer." -ForegroundColor Yellow
+            exit 1
+        }
+        if ($depot.sha1 -and (Hash1 $alvo) -eq $depot.sha1) {
+            Write-Host ""
+            Write-Host "  Mas a Steam diz que ELE E' o arquivo de fabrica -- entao o" -ForegroundColor Yellow
+            Write-Host "  errado esta' no patch. Avise o autor da traducao." -ForegroundColor Yellow
+            exit 1
+        }
+        Write-Host "  Conferido com a Steam: nao e' o arquivo de fabrica." -ForegroundColor Red
+    }
+    Write-Host ""
+    Write-Host "  Como consertar:" -ForegroundColor Yellow
+    Write-Host "    1. apague este arquivo:"
+    Write-Host "       $alvo" -ForegroundColor White
+    Write-Host "    2. na Steam: botao direito no jogo > Propriedades >"
+    Write-Host "       Arquivos instalados > Verificar integridade dos arquivos"
+    Write-Host "       (assim a Steam rebaixa so' ele)"
+    Write-Host "    3. rode este instalador de novo"
+    Write-Host ""
+    Write-Host "  Se voce tem outro mod ou outra traducao instalada, remova antes." -ForegroundColor Yellow
     exit 1
 }
 FecharBarra ("conferidos {0} arquivos: {1} a traduzir, {2} ja' prontos" -f `
     $manifesto.arquivos.Count, $fazer.Count, $prontos)
+$atualizando = @($fazer | Where-Object { $_.delta }).Count
+if ($atualizando) {
+    Write-Host ("  {0} arquivo(s) vem de uma versao anterior da traducao - " +
+                "atualizando no lugar" -f $atualizando) -ForegroundColor Green
+}
 
 if ($fazer.Count -eq 0) {
     Write-Host ""
@@ -273,7 +399,9 @@ foreach ($item in $fazer) {
         }
         $fonte = $bkp
     }
-    $delta = Join-Path (Join-Path $Base "patch") $a.delta
+    # arquivo vindo de uma versao anterior da traducao usa o delta dela
+    $nomeDelta = if ($item.delta) { $item.delta } else { $a.delta }
+    $delta = Join-Path (Join-Path $Base "patch") $nomeDelta
     # o xdelta3 nao informa progresso, mas o arquivo que ele escreve cresce --
     # e' dai' que sai a fracao deste arquivo
     $Global:BarraRotulo = $a.destino

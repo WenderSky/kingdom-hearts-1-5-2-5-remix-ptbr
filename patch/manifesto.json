@@ -1,5 +1,5 @@
 {
- "versao": "1.0",
+ "versao": "1.1",
  "jogo": "KINGDOM HEARTS HD 1.5+2.5 ReMIX",
  "conteudo": "tradução PT-BR de texto — a coletânea inteira",
  "arquivos": [
@@ -7,49 +7,91 @@
    "destino": "dt/kh1_first.pkg",
    "delta": "kh1_first.pkg.xdelta",
    "sha256_original": "d082325abc478eb9196d70af80d1be570032e693d5ce50d29df571459aee8d0e",
-   "sha256_traduzido": "68837005ec29b48e98532e7c88d52222188b73e4d3009735bcfb63d2b2d27cd8",
+   "sha256_traduzido": "ec2ebe0cc3eb2e5aae44816ae8fd03df6c4e5e1352fea673bab5c97c31ba844a",
    "bytes_original": 919711488,
-   "jogo": "KINGDOM HEARTS FINAL MIX"
+   "jogo": "KINGDOM HEARTS FINAL MIX",
+   "atualizacoes": [
+    {
+     "versao": "1.0",
+     "de": "68837005ec29b48e98532e7c88d52222188b73e4d3009735bcfb63d2b2d27cd8",
+     "delta": "kh1_first.pkg.de1_0.xdelta"
+    }
+   ]
   },
   {
    "destino": "dt/kh1_first.hed",
    "delta": "kh1_first.hed.xdelta",
    "sha256_original": "5eb432b333a923dbbb1c84dc72834985f55501da27368d73aceaee11f78d4267",
-   "sha256_traduzido": "0ebe74b0ce33f6e76c1da9b156998f55a39d215e58b8e5f74eb0dc5578ce67e1",
+   "sha256_traduzido": "d0e77d32d028864512e5e595e91bd4dbd44b45a710ff1bb2ed161a6d39ac5b36",
    "bytes_original": 19232,
-   "jogo": "KINGDOM HEARTS FINAL MIX"
+   "jogo": "KINGDOM HEARTS FINAL MIX",
+   "atualizacoes": [
+    {
+     "versao": "1.0",
+     "de": "0ebe74b0ce33f6e76c1da9b156998f55a39d215e58b8e5f74eb0dc5578ce67e1",
+     "delta": "kh1_first.hed.de1_0.xdelta"
+    }
+   ]
   },
   {
    "destino": "dt/kh1_second.pkg",
    "delta": "kh1_second.pkg.xdelta",
    "sha256_original": "c68d57e4a0c66465d04f9dafcb3cf75bc808f70b3d3e233f8a97108419c1eb37",
-   "sha256_traduzido": "b2ba2e0a02bb0bcc68355ab7f74caf35b6b33ee7ac86f403e7ab62a9c0000516",
+   "sha256_traduzido": "14e4903a59d9c90fa7e58008b044549126dd1ee740a03ecc0d0091af4598c87e",
    "bytes_original": 3020124848,
-   "jogo": "KINGDOM HEARTS FINAL MIX"
+   "jogo": "KINGDOM HEARTS FINAL MIX",
+   "atualizacoes": [
+    {
+     "versao": "1.0",
+     "de": "b2ba2e0a02bb0bcc68355ab7f74caf35b6b33ee7ac86f403e7ab62a9c0000516",
+     "delta": "kh1_second.pkg.de1_0.xdelta"
+    }
+   ]
   },
   {
    "destino": "dt/kh1_second.hed",
    "delta": "kh1_second.hed.xdelta",
    "sha256_original": "1b6df4252f5938ce601b3a12d457bdeb95768764eefd36a3f146cc927d29aa46",
-   "sha256_traduzido": "d1a2ec09eb6391e3012ca977ec77a6e79a6e5720151daae3701c4874dc6e0ca3",
+   "sha256_traduzido": "92ea814b70c67b24019fc2be45c4a17409f55144603e98e0db8b588b4a79cd48",
    "bytes_original": 25248,
-   "jogo": "KINGDOM HEARTS FINAL MIX"
+   "jogo": "KINGDOM HEARTS FINAL MIX",
+   "atualizacoes": [
+    {
+     "versao": "1.0",
+     "de": "d1a2ec09eb6391e3012ca977ec77a6e79a6e5720151daae3701c4874dc6e0ca3",
+     "delta": "kh1_second.hed.de1_0.xdelta"
+    }
+   ]
   },
   {
    "destino": "dt/kh1_third.pkg",
    "delta": "kh1_third.pkg.xdelta",
    "sha256_original": "ca585d23ca13ad8662d96c18aa1fa9015d027cd3395234b0797d6dd22dd39331",
-   "sha256_traduzido": "111cc532db534eead8e3ac927e60cf0ea14e8fd20a9a34c63e065260b03a90fb",
+   "sha256_traduzido": "94158d4141f2b5a23d6bec337473422b77c389adf15e44ecd1258871ca91e281",
    "bytes_original": 2208449920,
-   "jogo": "KINGDOM HEARTS FINAL MIX"
+   "jogo": "KINGDOM HEARTS FINAL MIX",
+   "atualizacoes": [
+    {
+     "versao": "1.0",
+     "de": "111cc532db534eead8e3ac927e60cf0ea14e8fd20a9a34c63e065260b03a90fb",
+     "delta": "kh1_third.pkg.de1_0.xdelta"
+    }
+   ]
   },
   {
    "destino": "dt/kh1_third.hed",
    "delta": "kh1_third.hed.xdelta",
    "sha256_original": "12c4c7f3a7fcb1d0e31e99e7d5a3a4ec5576f0169eb1ec3a9946890ab63104d7",
-   "sha256_traduzido": "f8dde8a2b30227b970705f7ccaed045df5939e92efe11c415a0399dd2316e9e7",
+   "sha256_traduzido": "2b786fc453d5be9e2ec13b198e1630e4d094f642c2037c5d8e94f885872011fb",
    "bytes_original": 25248,
-   "jogo": "KINGDOM HEARTS FINAL MIX"
+   "jogo": "KINGDOM HEARTS FINAL MIX",
+   "atualizacoes": [
+    {
+     "versao": "1.0",
+     "de": "f8dde8a2b30227b970705f7ccaed045df5939e92efe11c415a0399dd2316e9e7",
+     "delta": "kh1_third.hed.de1_0.xdelta"
+    }
+   ]
   },
   {
    "destino": "dt/Theater.pkg",

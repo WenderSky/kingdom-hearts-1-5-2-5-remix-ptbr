@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.0-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.1-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -109,6 +109,35 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## 🩹 O que mudou na 1.1
+
+Tudo aqui saiu de relatos de quem instalou a 1.0 e jogou.
+
+- **O Diário do Grilo fechava o jogo, e vazava texto para fora da página.**
+  Dois sintomas, uma causa: o `{0F}` que vira a página é um comando que precisa
+  de um espaço logo depois. Aparado no fim do texto, o jogo fechava ao virar a
+  última página (22 Crônicas, 45 fichas, 9 Relatórios); virado em quebra de
+  linha, a página seguinte saía por cima da atual, fora da caixa e com as
+  letras espaçadas. No inglês são 606 ocorrências e 606 com o espaço.
+  Na tradução eram 233 comandos com o argumento trocado, mais as 76 entradas
+  que o tinham perdido no fim. Uma régua nova reprova quem aparar de novo.
+- **Menus com as opções trocadas de lugar.** No KH1 o cursor anda por linha:
+  cada linha é uma opção. O reencaixe de texto tinha empurrado palavras de uma
+  para a outra, e no início do jogo aparecia `Ampliar meus` / `horizontes. Ser
+  forte.`. **69 caixas realinhadas** — as três respostas de Destiny Islands, as
+  copas do Coliseu, a entrada da arena, o balanço do Pooh, o sim/não de
+  Traverse Town.
+- **13 páginas do Diário passavam da caixa** — re-quebradas com a régua de
+  pixels.
+- **`iOlhar em Volta` na tela de controles**: o desenho do botão tinha se
+  perdido e sobrava a letra solta. Mais três mensagens de menu no mesmo caso.
+- **O instalador agora explica o erro.** Quando um arquivo do jogo não bate,
+  ele diz se está incompleto, se foi alterado por outro mod ou se o jogo está
+  numa versão diferente — comparando com o manifesto de depósito da própria
+  Steam — e manda apagar só aquele arquivo antes de verificar a integridade.
 
 ---
 

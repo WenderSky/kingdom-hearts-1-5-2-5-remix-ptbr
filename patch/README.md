@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português. Um patch só.
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.0-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.1-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Download](https://img.shields.io/badge/download-18_MB-orange?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -86,6 +86,7 @@ antes e depois — é por ele que se confere se deu certo.
 | **Estraga o save?** | não. O patch mexe só nos arquivos de texto |
 | **Preciso dos vídeos?** | não. O pacote de vídeos é separado e opcional |
 | **Ordem de instalação** | tanto faz. Nada aqui desfaz nada |
+| **Atualizar da 1.0** | rodar o instalador por cima basta: ele reconhece a versão anterior e aplica só a diferença, sem rebaixar nada pela Steam |
 | **Como desfazer** | Steam ▸ botão direito no jogo ▸ Propriedades ▸ Arquivos instalados ▸ **Verificar integridade dos arquivos** |
 
 > O instalador **confere o SHA-256** de cada arquivo antes de aplicar o delta.
@@ -114,6 +115,21 @@ antes e depois — é por ele que se confere se deu certo.
 
 Traduz-se **tudo o que descreve** (efeito de item, ficha de inimigo, resumo do
 Diário) e **todo comando de interação** — é o que você lê na hora de agir.
+
+---
+
+## 🩹 O que mudou na 1.1
+
+Correções vindas de quem instalou a 1.0 e jogou.
+
+| | |
+|---|---|
+| **O Diário fechava o jogo** | ao virar a última página de 22 Crônicas, 45 fichas do Registro de Personagens e 9 Relatórios de Ansem |
+| **E vazava texto para fora da página** | o resto do Diário desenhava a página seguinte por cima da atual, fora da caixa e com as letras espaçadas. É o mesmo defeito: o `{0F}` que vira a página precisa de um espaço logo depois, e a tradução tinha aparado. No inglês são 606 ocorrências do comando e 606 com o espaço; na tradução, 233 estavam erradas |
+| **Menus com as opções trocadas de lugar** | no KH1 o cursor anda por linha, e o reencaixe do texto tinha empurrado palavras de uma opção para a outra — `Ampliar meus` / `horizontes. Ser forte.` no início do jogo, `Certo, topo! Foi` / `mal, sem tempo agora.` em Traverse Town. **69 caixas realinhadas**, incluindo as copas do Coliseu, a entrada da arena, o balanço do Pooh e o Bosque dos Cem Acres |
+| **Texto passando da caixa no Diário** | 13 páginas re-quebradas com a régua de pixels |
+| **`iOlhar em Volta`** | a tela de controles mostrava a letra `i` solta: o desenho do botão tinha se perdido na tradução. Mais três mensagens de menu no mesmo caso |
+| **Instalador mais claro** | quando um arquivo do jogo não bate, ele agora diz **por quê** — arquivo incompleto, alterado por outro mod, ou versão diferente do jogo — comparando com o próprio manifesto de depósito da Steam, e manda apagar só aquele arquivo antes de verificar a integridade |
 
 ---
 
