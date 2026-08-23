@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.1-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.2-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -109,6 +109,36 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## 🩹 O que mudou na 1.2
+
+Dois relatos de quem jogou a 1.1 — e os dois eram **o mesmo defeito**.
+
+- **O baú não dizia o que você tinha achado.** A caixa piscava no canto e
+  fechava sem mostrar o item: o baú da primeira área de Traverse Town, o do
+  Defense Up, e os outros.
+- **O correio devolvia uma caixa vazia.** Você entregava o cartão e não recebia
+  nada em tela; devia vir um Cottage.
+- **A causa.** O `treasure.ev` e o `PresentMessage.bin` não são lista de texto,
+  são **script**: os bytes entre uma fala e a seguinte fazem parte do fluxo de
+  comandos. Quando a tradução ficava mais curta que o inglês (`Obtained` →
+  `Obteve` são 2 bytes), o espaço que sobrava era preenchido com **zeros** — e
+  eles entravam no meio dos comandos. Agora o que sobra vira **espaço**, que
+  não aparece na tela e não desloca nada. **60 falas corrigidas**, e o arquivo
+  continua com o mesmo tamanho ao byte.
+- **A prova.** Nos outros quatro idiomas do disco há *sempre exatamente um*
+  zero entre uma fala e o marcador seguinte — 66 vezes no espanhol, no francês
+  e no alemão, 70 no italiano, sem uma exceção. Na nossa 1.1, 36 estavam fora.
+  Uma verificação nova reprova o pacote se o esqueleto do script mudar.
+- **`complete gummi collection`** tinha ficado em inglês nas duas mensagens que
+  o mostram. Virou **coleção completa de gummis**.
+
+Quem está na 1.0 ou na 1.1 é só rodar o instalador por cima — ele reconhece a
+versão e aplica só a diferença, sem rebaixar nada pela Steam. Os três caminhos
+foram testados de ponta a ponta: instalação do zero, atualização da 1.0 e da
+1.1, com 22/22 arquivos corretos em cada uma.
 
 ---
 

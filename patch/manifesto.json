@@ -1,5 +1,5 @@
 {
- "versao": "1.1",
+ "versao": "1.2",
  "jogo": "KINGDOM HEARTS HD 1.5+2.5 ReMIX",
  "conteudo": "tradução PT-BR de texto — a coletânea inteira",
  "arquivos": [
@@ -7,7 +7,7 @@
    "destino": "dt/kh1_first.pkg",
    "delta": "kh1_first.pkg.xdelta",
    "sha256_original": "d082325abc478eb9196d70af80d1be570032e693d5ce50d29df571459aee8d0e",
-   "sha256_traduzido": "ec2ebe0cc3eb2e5aae44816ae8fd03df6c4e5e1352fea673bab5c97c31ba844a",
+   "sha256_traduzido": "d7ec7acc3fcfc8fc01b5a67272c097e655e4d4e69ae2d8adba8e143e0e04af59",
    "bytes_original": 919711488,
    "jogo": "KINGDOM HEARTS FINAL MIX",
    "atualizacoes": [
@@ -15,6 +15,11 @@
      "versao": "1.0",
      "de": "68837005ec29b48e98532e7c88d52222188b73e4d3009735bcfb63d2b2d27cd8",
      "delta": "kh1_first.pkg.de1_0.xdelta"
+    },
+    {
+     "versao": "1.1",
+     "de": "ec2ebe0cc3eb2e5aae44816ae8fd03df6c4e5e1352fea673bab5c97c31ba844a",
+     "delta": "kh1_first.pkg.de1_1.xdelta"
     }
    ]
   },
@@ -22,7 +27,7 @@
    "destino": "dt/kh1_first.hed",
    "delta": "kh1_first.hed.xdelta",
    "sha256_original": "5eb432b333a923dbbb1c84dc72834985f55501da27368d73aceaee11f78d4267",
-   "sha256_traduzido": "d0e77d32d028864512e5e595e91bd4dbd44b45a710ff1bb2ed161a6d39ac5b36",
+   "sha256_traduzido": "be5594932d937fbd01267954349061dfb6c12e339e7c07d8e940d74bb0bc9999",
    "bytes_original": 19232,
    "jogo": "KINGDOM HEARTS FINAL MIX",
    "atualizacoes": [
@@ -30,6 +35,11 @@
      "versao": "1.0",
      "de": "0ebe74b0ce33f6e76c1da9b156998f55a39d215e58b8e5f74eb0dc5578ce67e1",
      "delta": "kh1_first.hed.de1_0.xdelta"
+    },
+    {
+     "versao": "1.1",
+     "de": "d0e77d32d028864512e5e595e91bd4dbd44b45a710ff1bb2ed161a6d39ac5b36",
+     "delta": "kh1_first.hed.de1_1.xdelta"
     }
    ]
   },

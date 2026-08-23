@@ -4,9 +4,9 @@
 
 ### A coletânea inteira em português. Um patch só.
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.1-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.2-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
-![Download](https://img.shields.io/badge/download-18_MB-orange?style=for-the-badge)
+![Download](https://img.shields.io/badge/download-23_MB-orange?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
 
 </div>
@@ -86,7 +86,7 @@ antes e depois — é por ele que se confere se deu certo.
 | **Estraga o save?** | não. O patch mexe só nos arquivos de texto |
 | **Preciso dos vídeos?** | não. O pacote de vídeos é separado e opcional |
 | **Ordem de instalação** | tanto faz. Nada aqui desfaz nada |
-| **Atualizar da 1.0** | rodar o instalador por cima basta: ele reconhece a versão anterior e aplica só a diferença, sem rebaixar nada pela Steam |
+| **Atualizar da 1.0 ou da 1.1** | rodar o instalador por cima basta: ele reconhece qual versão você tem e aplica só a diferença, sem rebaixar nada pela Steam. Vale igual no Windows e no Steam Deck |
 | **Como desfazer** | Steam ▸ botão direito no jogo ▸ Propriedades ▸ Arquivos instalados ▸ **Verificar integridade dos arquivos** |
 
 > O instalador **confere o SHA-256** de cada arquivo antes de aplicar o delta.
@@ -115,6 +115,23 @@ antes e depois — é por ele que se confere se deu certo.
 
 Traduz-se **tudo o que descreve** (efeito de item, ficha de inimigo, resumo do
 Diário) e **todo comando de interação** — é o que você lê na hora de agir.
+
+---
+
+## 🩹 O que mudou na 1.2
+
+Dois relatos de quem jogou a 1.1, e os dois eram **o mesmo defeito**.
+
+| | |
+|---|---|
+| **O baú não dizia o que você achou** | a caixa piscava no canto e fechava sem mostrar o item — o baú da primeira área de Traverse Town, o do Defense Up, e os outros |
+| **O correio devolvia caixa vazia** | você entregava o cartão e não recebia nada em tela; devia vir um Cottage |
+| **A causa** | o `treasure.ev` e o `PresentMessage.bin` **não são lista de texto, são script**: os bytes entre uma fala e a seguinte fazem parte do fluxo de comandos. Quando a tradução ficava mais curta que o inglês (`Obtained` → `Obteve` são 2 bytes), o espaço que sobrava era preenchido com zeros — e esses zeros entravam no meio dos comandos. Agora o que sobra vira **espaço**, que não aparece na tela e não desloca nada. **60 falas** corrigidas |
+| **A prova** | nos outros quatro idiomas do disco há *sempre exatamente um* zero entre uma fala e o marcador seguinte — 66 vezes no espanhol, no francês e no alemão, 70 no italiano, sem uma exceção. Na nossa 1.1, 36 estavam fora |
+| **`complete gummi collection`** | o nome tinha ficado em inglês nas duas mensagens que o mostram. Virou **coleção completa de gummis** |
+
+> Quem está na 1.0 ou na 1.1 é só rodar o instalador por cima: são **6 KB** de
+> diferença vindo da 1.1, e nada precisa ser rebaixado pela Steam.
 
 ---
 
