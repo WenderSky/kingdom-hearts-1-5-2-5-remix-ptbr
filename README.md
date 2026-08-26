@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.4-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.5-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -109,6 +109,42 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## 🩹 O que mudou na 1.5
+
+### No Diário, o texto sumia atrás do retrato
+
+Na ficha de personagem, a segunda linha da página da **direita** passava por
+trás do retrato e ficava ilegível — o verbete do Cid mostrava *"Traverse
+Town"*, um pedaço escondido, e *"nave"*.
+
+- **A causa.** O retrato cobre as **duas primeiras linhas** da página direita.
+  A régua que mede as caixas aprovava tudo, porque a linha cabia *na página* —
+  o que não cabia era a linha **debaixo de uma imagem**, e ali a largura útil é
+  outra.
+- **A prova.** O inglês já escreve curto nessas duas linhas de propósito
+  (*"gummi ship"*, *"he'd built"*): nas 134 linhas que caem sob o retrato,
+  **nenhuma passa de 151 px**, contra os 240 px das linhas livres. A nossa
+  tradução chegava a 236, e **52 fichas de 184** tinham texto escondido.
+- **O conserto.** As 52 voltaram a caber ao lado do retrato. Só mudou onde a
+  linha quebra, e apenas no parágrafo que o retrato alcança. Três fichas não
+  cabiam nem assim e ganharam uma reescrita mínima.
+
+### Descrições de item pela metade
+
+- **Dois acessórios diferentes mostravam a mesma descrição.** O KH1 descreve o
+  mesmo efeito em três degraus, e o degrau está no advérbio: *Slightly raises
+  Defense* virou "Aumenta a Defesa", **idêntico** a *Raises Defense*. A Corrente
+  Protect e a Protera diziam a mesma frase, sem como saber qual era mais forte.
+- **Vinte descrições de material de síntese tinham inglês dentro** — `essência
+  de vitality`, `A rare e most valuable ore`, e cinco com a primeira frase
+  inteira sem traduzir. A tradução é feita por fragmento: a frase que se repete
+  em 34 itens estava pronta, e a que é única em cada um faltou.
+- **25 descrições corrigidas** ao todo.
+
+Quem está em qualquer versão anterior é só rodar o instalador por cima.
 
 ---
 

@@ -118,6 +118,19 @@ Diário) e **todo comando de interação** — é o que você lê na hora de agi
 
 ---
 
+## 🩹 O que mudou na 1.5
+
+| | |
+|---|---|
+| **Diário: texto atrás do retrato** | na ficha de personagem, a segunda linha da página da direita passava por trás do retrato e sumia. O retrato cobre as **duas primeiras linhas** dela, e ali a largura útil é menor: o inglês nunca põe mais de **151 px** (contra 240 nas linhas livres), a nossa tradução chegava a 236. **52 fichas de 184** afetadas, todas corrigidas mudando só onde a linha quebra |
+| **Duas descrições de item idênticas** | o grau do efeito mora no advérbio, e ele tinha sido comido: *Slightly raises Defense* virou "Aumenta a Defesa", igual a *Raises Defense*. A Corrente Protect e a Protera diziam a mesma frase |
+| **Inglês dentro da descrição** | `essência de vitality`, `Essência de emptiness cristalizada`, `A rare e most valuable ore`, e cinco com a frase inteira sem traduzir. A tradução é por fragmento: a frase repetida em 34 itens estava pronta, a única de cada item faltou. **25 descrições** corrigidas |
+
+> Rodar o instalador por cima basta, venha de qualquer versão: ele reconhece o
+> que você tem pelo SHA-256 e aplica só a diferença.
+
+---
+
 ## 🩹 O que mudou na 1.4
 
 | | |
