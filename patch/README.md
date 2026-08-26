@@ -86,7 +86,7 @@ antes e depois — é por ele que se confere se deu certo.
 | **Estraga o save?** | não. O patch mexe só nos arquivos de texto |
 | **Preciso dos vídeos?** | não. O pacote de vídeos é separado e opcional |
 | **Ordem de instalação** | tanto faz. Nada aqui desfaz nada |
-| **Atualizar da 1.0 ou da 1.1** | rodar o instalador por cima basta: ele reconhece qual versão você tem e aplica só a diferença, sem rebaixar nada pela Steam. Vale igual no Windows e no Steam Deck |
+| **Atualizar da 1.0, 1.1 ou 1.2** | rodar o instalador por cima basta: ele reconhece qual versão você tem e aplica só a diferença, sem rebaixar nada pela Steam. Vale igual no Windows e no Steam Deck |
 | **Como desfazer** | Steam ▸ botão direito no jogo ▸ Propriedades ▸ Arquivos instalados ▸ **Verificar integridade dos arquivos** |
 
 > O instalador **confere o SHA-256** de cada arquivo antes de aplicar o delta.
@@ -115,6 +115,26 @@ antes e depois — é por ele que se confere se deu certo.
 
 Traduz-se **tudo o que descreve** (efeito de item, ficha de inimigo, resumo do
 Diário) e **todo comando de interação** — é o que você lê na hora de agir.
+
+---
+
+## 🩹 O que mudou na 1.3
+
+Um relato de quem jogou a 1.2, com GIF: dentro da **nave gummi**, a segunda
+linha das conversas do rádio saía em vermelho apagado, ilegível.
+
+| | |
+|---|---|
+| **O que acontecia** | Sora dizia *"Nossa, é"* e o *"enorme!"* ficava embaixo, borrado; Donald perguntava *"O que é"* e o *"aquilo?"* sumia igual. As falas de uma linha só apareciam normais — foi essa a pista. **42 falas** ao todo |
+| **A causa** | essas caixas têm **duas linhas**, e a quebra de linha delas é um comando próprio do formato, não o `
+` de sempre. A tradução quebrou com `
+` e, ao quebrar, repetiu na frente da linha nova um pedaço do cabeçalho da caixa — que **não é texto, é um comando** (o que diz quanto tempo a fala fica na tela). Solto no meio da frase, ele desmonta a caixa: sobra a sombra do texto, sem a letra por cima |
+| **A prova** | nos cinco idiomas oficiais do disco são **473 falas** e **nenhuma** passa de duas linhas. A nossa 1.2 tinha 34 com três |
+| **O conserto** | as 42 voltaram a caber em duas linhas, com a quebra certa. **Nenhuma precisou ser reescrita**: só mudou onde a linha quebra, e o corte segue o ritmo do próprio inglês para não separar o que anda junto (*Marca da Trindade*, *Rei Mickey*) |
+| **De brinde** | o `treasure.ev` e o `PresentMessage.bin` — os do conserto da 1.2 — existem em **dois pacotes** do jogo. A 1.2 corrigiu o que o jogo lê; a outra cópia ficou como estava. Agora as duas estão iguais |
+
+> Quem está na 1.0, 1.1 ou 1.2 é só rodar o instalador por cima: da 1.2 para a
+> 1.3 são **10 KB**, e nada precisa ser rebaixado pela Steam.
 
 ---
 

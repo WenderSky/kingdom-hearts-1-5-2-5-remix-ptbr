@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.2-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.3-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -109,6 +109,39 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## 🩹 O que mudou na 1.3
+
+Um relato de quem jogou a 1.2, com GIF: dentro da **nave gummi**, a segunda
+linha das conversas do rádio saía em vermelho apagado, ilegível. As falas que
+cabiam numa linha só apareciam normais — e foi isso que deu a pista.
+
+- **O que acontecia.** Sora dizia *"Nossa, é"* e o *"enorme!"* ficava embaixo,
+  borrado; Donald perguntava *"O que é"* e o *"aquilo?"* sumia do mesmo jeito.
+  Ao todo, **42 falas**.
+- **A causa.** Essas caixas têm **duas linhas**, e a quebra de linha delas é um
+  comando próprio do formato — não é o `
+` de sempre. A tradução quebrou com
+  `
+` e, ao quebrar, repetiu na frente da linha nova um pedaço do cabeçalho da
+  caixa. Só que esse pedaço **não é texto: é um comando**, o mesmo que diz
+  quanto tempo a fala fica na tela. Solto no meio da frase, ele desmonta a
+  caixa — e o que sobra na tela é a sombra do texto, sem a letra por cima.
+- **A prova.** Está no próprio disco: nos cinco idiomas oficiais são **473
+  falas** e **nenhuma** passa de duas linhas. A nossa 1.2 tinha 34 com três.
+- **O conserto.** As 42 voltaram a caber em duas linhas, com a quebra certa.
+  **Nenhuma precisou ser reescrita** — só mudou onde a linha quebra, e o ponto
+  de corte segue o ritmo do próprio inglês para não separar o que anda junto
+  (*Marca da Trindade*, *Rei Mickey*).
+- **De brinde, o baú na cópia que faltava.** O `treasure.ev` e o
+  `PresentMessage.bin` — os do conserto da 1.2 — existem em **dois pacotes** do
+  jogo. A 1.2 corrigiu o que o jogo lê; a cópia guardada no outro ficou como
+  estava. Agora as duas estão iguais.
+
+Quem está na 1.0, 1.1 ou 1.2 é só rodar o instalador por cima — ele reconhece a
+versão e aplica só a diferença. Da 1.2 para a 1.3 são **10 KB**.
 
 ---
 
