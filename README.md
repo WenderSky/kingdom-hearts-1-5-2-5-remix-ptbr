@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.3-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.4-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -109,6 +109,43 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## 🩹 O que mudou na 1.4
+
+### A descrição da habilidade sumia no meio
+
+No menu **Habilidades**, o texto do rodapé era cortado e o resto ficava fora da
+tela: a Fúria do Sora explicava *"...Junte com uma habilidade de arma para
+mais"* e o **força.** nunca aparecia; a Carga do Pateta perdia o **MP.** do
+custo.
+
+- **A causa.** A caixa mostra **três linhas** e o inglês nunca passa disso — mas
+  o jogo **monta essa caixa de dois pedaços**: a descrição e o custo ficam
+  guardados separados e ele cola um no outro na hora de mostrar. Medir cada
+  metade sozinha não acha nada; o estouro só existe depois da cola.
+- **O que mais pesava.** O inglês escreve o custo inteiro em **uma linha**
+  (*Special attack. Cost: 1 MP.*) e a tradução tinha quebrado em duas, sem
+  precisar. Juntar de volta dá 279 px contra um teto de 405.
+- **O conserto.** **30 descrições** voltaram às três linhas. Vinte e nove só
+  mudaram onde a linha quebra; **uma única** precisou de reescrita — a do MP
+  Burst, onde *"que resta"* virou *"restante"*.
+
+### O gummi: a 1.3 consertou o pacote errado
+
+As conversas do rádio da nave continuavam cortadas depois da 1.3. O arquivo das
+falas **existe em dois pacotes do jogo**, e a 1.3 corrigiu o que o jogo não lê:
+ele não existe no `kh1_first` de fábrica — quem o pôs lá foi o próprio patch, na
+1.0 — então procurar na base de fábrica achava só a cópia do `kh1_third`. Agora
+as duas estão certas.
+
+É o mesmo tropeço do `treasure.ev` na 1.2, e a regra que fica é procurar o nome
+em **todos** os pacotes antes de dizer onde um arquivo mora, inclusive nos que
+o patch criou.
+
+Quem está em qualquer versão anterior é só rodar o instalador por cima — ele
+reconhece o que você tem pelo SHA-256 e aplica só a diferença.
 
 ---
 

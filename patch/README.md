@@ -86,7 +86,7 @@ antes e depois — é por ele que se confere se deu certo.
 | **Estraga o save?** | não. O patch mexe só nos arquivos de texto |
 | **Preciso dos vídeos?** | não. O pacote de vídeos é separado e opcional |
 | **Ordem de instalação** | tanto faz. Nada aqui desfaz nada |
-| **Atualizar da 1.0, 1.1 ou 1.2** | rodar o instalador por cima basta: ele reconhece qual versão você tem e aplica só a diferença, sem rebaixar nada pela Steam. Vale igual no Windows e no Steam Deck |
+| **Atualizar de uma versão anterior** | rodar o instalador por cima basta: ele reconhece qual versão você tem e aplica só a diferença, sem rebaixar nada pela Steam. Vale igual no Windows e no Steam Deck |
 | **Como desfazer** | Steam ▸ botão direito no jogo ▸ Propriedades ▸ Arquivos instalados ▸ **Verificar integridade dos arquivos** |
 
 > O instalador **confere o SHA-256** de cada arquivo antes de aplicar o delta.
@@ -115,6 +115,20 @@ antes e depois — é por ele que se confere se deu certo.
 
 Traduz-se **tudo o que descreve** (efeito de item, ficha de inimigo, resumo do
 Diário) e **todo comando de interação** — é o que você lê na hora de agir.
+
+---
+
+## 🩹 O que mudou na 1.4
+
+| | |
+|---|---|
+| **Descrição de habilidade cortada** | no menu Habilidades o rodapé era cortado e o resto ficava fora da tela: a Fúria perdia o *força.*, a Carga do Pateta perdia o *MP.* do custo |
+| **A causa** | a caixa mostra **três linhas**, e o jogo **monta ela de dois pedaços** — a descrição e o custo ficam guardados separados e são colados na hora de mostrar. Medir cada metade sozinha não acha nada: o estouro só existe depois da cola. Pesava também o custo ter sido quebrado em duas linhas onde o inglês usa uma |
+| **O conserto** | **30 descrições** de volta às três linhas; 29 só mudaram onde a linha quebra e **uma** precisou de reescrita (*"que resta"* → *"restante"*, no MP Burst) |
+| **O gummi de novo** | as conversas da nave continuavam cortadas depois da 1.3: o arquivo existe em **dois pacotes** e a 1.3 corrigiu o que o jogo não lê. Ele não existe no `kh1_first` de fábrica — o próprio patch o pôs lá na 1.0 — então procurar na base de fábrica achava só a outra cópia. Agora as duas estão certas |
+
+> Rodar o instalador por cima basta, venha de qualquer versão: ele reconhece o
+> que você tem pelo SHA-256 e aplica só a diferença.
 
 ---
 
