@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.5-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.6-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -109,6 +109,26 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## ✍️ O que mudou na 1.6
+
+Esta versão não corrige nada: ela **assina** a tradução dentro do jogo, na
+mesma fonte e com o mesmo contorno da arte original.
+
+| | |
+|---|---|
+| **No menu da coletânea** | embaixo do logotipo do painel entrou **Tradução - Wender_sky**, nas **seis** telas (KH Final Mix, Re:CoM, Days, KH2, BbS e Re:coded). São seis arquivos porque cada jogo tem a sua imagem inteira, e o `Disney / SQUARE ENIX` do rodapé muda de cor conforme o fundo |
+| **Nos menus dos filmes** | **Days** e **Re:coded** receberam o mesmo crédito |
+| **Nas telas iniciais** | o bloco `DEVELOPED BY / SQUARE ENIX` virou **TRADUÇÃO POR / WENDER_SKY**, desenhado glifo a glifo com a fonte de menu do próprio jogo — o `Ç` e o `Ã`, que não existem nela, foram montados a partir dos seus traços. Entrou em **KINGDOM HEARTS Final Mix**, **358/2 Days**, **Re:coded** e **Birth by Sleep** |
+| **KH2 e Re:CoM ficaram de fora** | neles o crédito aparece com teclado mas volta ao original quando o jogo detecta um controle: a tela inteira vem de outro atlas, que não foi encontrado. Varrendo o conteúdo, as **23** imagens do `kh2_first` e as **15** do Re:CoM que têm o bloco estão todas assinadas, e ainda assim volta. Para não correr risco à toa, os dois foram devolvidos ao estado da 1.5 — a tradução deles segue inteira |
+
+> O `bbs_third` é novo na distribuição. Quem vem de qualquer versão anterior
+> tem esse arquivo de fábrica, e o instalador aplica o patch certo sozinho.
+
+> Rodar o instalador por cima basta, venha de qualquer versão: ele reconhece o
+> que você tem pelo SHA-256 e aplica só a diferença.
 
 ---
 

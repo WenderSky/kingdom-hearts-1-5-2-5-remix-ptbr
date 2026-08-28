@@ -118,6 +118,26 @@ Diário) e **todo comando de interação** — é o que você lê na hora de agi
 
 ---
 
+## ✍️ O que mudou na 1.6
+
+Esta versão não corrige nada: ela **assina** a tradução dentro do jogo, na
+mesma fonte e com o mesmo contorno da arte original.
+
+| | |
+|---|---|
+| **No menu da coletânea** | embaixo do logotipo do painel entrou **Tradução - Wender_sky**, nas **seis** telas (KH Final Mix, Re:CoM, Days, KH2, BbS e Re:coded). São seis arquivos porque cada jogo tem a sua imagem inteira, e o `Disney / SQUARE ENIX` do rodapé muda de cor conforme o fundo |
+| **Nos menus dos filmes** | **Days** e **Re:coded** receberam o mesmo crédito |
+| **Nas telas iniciais** | o bloco `DEVELOPED BY / SQUARE ENIX` virou **TRADUÇÃO POR / WENDER_SKY**, desenhado glifo a glifo com a fonte de menu do próprio jogo — o `Ç` e o `Ã`, que não existem nela, foram montados a partir dos seus traços. Entrou em **KINGDOM HEARTS Final Mix**, **358/2 Days**, **Re:coded** e **Birth by Sleep** |
+| **KH2 e Re:CoM ficaram de fora** | neles o crédito aparece com teclado mas volta ao original quando o jogo detecta um controle: a tela inteira vem de outro atlas, que não foi encontrado. Varrendo o conteúdo, as **23** imagens do `kh2_first` e as **15** do Re:CoM que têm o bloco estão todas assinadas, e ainda assim volta. Para não correr risco à toa, os dois foram devolvidos ao estado da 1.5 — a tradução deles segue inteira |
+
+> O `bbs_third` é novo na distribuição. Quem vem de qualquer versão anterior
+> tem esse arquivo de fábrica, e o instalador aplica o patch certo sozinho.
+
+> Rodar o instalador por cima basta, venha de qualquer versão: ele reconhece o
+> que você tem pelo SHA-256 e aplica só a diferença.
+
+---
+
 ## 🩹 O que mudou na 1.5
 
 | | |
