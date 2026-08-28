@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.7-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.8-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -109,6 +109,22 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## 📏 O que mudou na 1.8
+
+Versao de acabamento: as linhas que passavam da largura da caixa.
+
+| | |
+|---|---|
+| **A regua** | medir contra o **ingles** engana — ele e a lingua mais curta do pacote, e quase toda traducao passa dele sem que isso queira dizer vazamento. A regua do projeto e outra: quanto o espanhol, o frances, o alemao e o italiano ocupam **naquela mesma mensagem**. Se o alemao coube ali, cabe |
+| **Re:CoM: 12 frases** | encurtadas pelas regras mecanicas, as que nao mudam sentido nem registro: *Voce esta pronto?* → *Esta pronto?*, *o Sora esta falando serio* → *o Sora fala serio*, *Aconteceu alguma coisa?* → *Aconteceu algo?* |
+| **BbS: a linha do tutorial** | tinha 349 px contra um teto de 330. **Nenhuma palavra mudou**: a segunda linha tinha folga, e bastou mover o `ou` para ela — 321 e 318 px, as duas dentro do teto |
+| **Conferido e correto** | `save` nao e erro (o Re:CoM usa *salvar* como verbo e *o save* como substantivo, na mesma frase); KH2 e o menu da coletanea nao tem nenhuma linha acima do teto; no BbS o que ainda passa sao **nomes proprios** (Perola, Huguinho, Pateta), por 1 a 11 px, sem como encurtar |
+
+> Rodar o instalador por cima basta, venha de qualquer versao: ele reconhece o
+> que voce tem pelo SHA-256 e aplica so a diferenca.
 
 ---
 

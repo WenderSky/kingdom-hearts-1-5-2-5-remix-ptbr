@@ -118,6 +118,22 @@ Diário) e **todo comando de interação** — é o que você lê na hora de agi
 
 ---
 
+## 📏 O que mudou na 1.8
+
+Versao de acabamento: as linhas que passavam da largura da caixa.
+
+| | |
+|---|---|
+| **A regua** | medir contra o **ingles** engana — ele e a lingua mais curta do pacote, e quase toda traducao passa dele sem que isso queira dizer vazamento. A regua do projeto e outra: quanto o espanhol, o frances, o alemao e o italiano ocupam **naquela mesma mensagem**. Se o alemao coube ali, cabe |
+| **Re:CoM: 12 frases** | encurtadas pelas regras mecanicas, as que nao mudam sentido nem registro: *Voce esta pronto?* → *Esta pronto?*, *o Sora esta falando serio* → *o Sora fala serio*, *Aconteceu alguma coisa?* → *Aconteceu algo?* |
+| **BbS: a linha do tutorial** | tinha 349 px contra um teto de 330. **Nenhuma palavra mudou**: a segunda linha tinha folga, e bastou mover o `ou` para ela — 321 e 318 px, as duas dentro do teto |
+| **Conferido e correto** | `save` nao e erro (o Re:CoM usa *salvar* como verbo e *o save* como substantivo, na mesma frase); KH2 e o menu da coletanea nao tem nenhuma linha acima do teto; no BbS o que ainda passa sao **nomes proprios** (Perola, Huguinho, Pateta), por 1 a 11 px, sem como encurtar |
+
+> Rodar o instalador por cima basta, venha de qualquer versao: ele reconhece o
+> que voce tem pelo SHA-256 e aplica so a diferenca.
+
+---
+
 ## ✨ O que mudou na 1.7
 
 | | |

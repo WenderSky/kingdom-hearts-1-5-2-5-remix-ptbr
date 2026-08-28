@@ -1,5 +1,5 @@
 {
- "versao": "1.7",
+ "versao": "1.8",
  "jogo": "KINGDOM HEARTS HD 1.5+2.5 ReMIX",
  "conteudo": "tradução PT-BR de texto — a coletânea inteira",
  "arquivos": [
@@ -207,7 +207,7 @@
    "destino": "dt/Recom.pkg",
    "delta": "Recom.pkg.xdelta",
    "sha256_original": "dc9e7042a76b0f71e6ce2db5f04e90378572ee8e85cb795e3c858e2ac5663d6e",
-   "sha256_traduzido": "95d96a5bb44bd4d4eef17ffac74c0f8b920b252d0cc4a4ab26ae75922cb9db12",
+   "sha256_traduzido": "2a1294287a21e0d246593b79be62e855869d76e0b28af126d418b8602b97540f",
    "bytes_original": 3954324464,
    "jogo": "KINGDOM HEARTS Re:Chain of Memories",
    "atualizacoes": [
@@ -220,6 +220,11 @@
      "versao": "1.6",
      "de": "639a19f1534ce63365593732723bd238746cd4585cc5ecf9b0bb7b79eb81bc79",
      "delta": "Recom.pkg.de1_6.xdelta"
+    },
+    {
+     "versao": "1.7",
+     "de": "95d96a5bb44bd4d4eef17ffac74c0f8b920b252d0cc4a4ab26ae75922cb9db12",
+     "delta": "Recom.pkg.de1_7.xdelta"
     }
    ]
   },
@@ -227,7 +232,7 @@
    "destino": "dt/Recom.hed",
    "delta": "Recom.hed.xdelta",
    "sha256_original": "06155a85d500e8fbaf947076feaadf8f4b65338e476211eea1988519f7550ff9",
-   "sha256_traduzido": "22176623f9726757acbdab9d6cba35263b7352c7b9264e7bacc292366f8764d8",
+   "sha256_traduzido": "9b1d8844220754c75906c2cfa0b17bc89e406697282fc3314c38c6a5678eccad",
    "bytes_original": 406048,
    "jogo": "KINGDOM HEARTS Re:Chain of Memories",
    "atualizacoes": [
@@ -240,6 +245,11 @@
      "versao": "1.6",
      "de": "fb82c11eccd1b8feb06675cb238d9f56395a6f3e63ea8c0502ef66cbb07e73db",
      "delta": "Recom.hed.de1_6.xdelta"
+    },
+    {
+     "versao": "1.7",
+     "de": "22176623f9726757acbdab9d6cba35263b7352c7b9264e7bacc292366f8764d8",
+     "delta": "Recom.hed.de1_7.xdelta"
     }
    ]
   },
@@ -247,7 +257,7 @@
    "destino": "dt/bbs_first.pkg",
    "delta": "bbs_first.pkg.xdelta",
    "sha256_original": "8c72a5d7509dfa829a02d65c5e5a27b3437252502636f42ed41ac31c3b6ce3be",
-   "sha256_traduzido": "12e97ebfe4550100c49a1c0a08cc00c351f746e8b274668481ac92b476ab1794",
+   "sha256_traduzido": "1c2b9d2907147c0f8b40b3c9f19401b63fed2320dd79f470985bbb1782349ddc",
    "bytes_original": 325895392,
    "jogo": "KINGDOM HEARTS Birth by Sleep FINAL MIX",
    "atualizacoes": [
@@ -255,6 +265,16 @@
      "versao": "1.5",
      "de": "7aa582e39bcb1258d54001c5da7788163b4899557baafbfc6d8b05cb523f0401",
      "delta": "bbs_first.pkg.de1_5.xdelta"
+    },
+    {
+     "versao": "1.6",
+     "de": "12e97ebfe4550100c49a1c0a08cc00c351f746e8b274668481ac92b476ab1794",
+     "delta": "bbs_first.pkg.de1_6.xdelta"
+    },
+    {
+     "versao": "1.7",
+     "de": "12e97ebfe4550100c49a1c0a08cc00c351f746e8b274668481ac92b476ab1794",
+     "delta": "bbs_first.pkg.de1_7.xdelta"
     }
    ]
   },
