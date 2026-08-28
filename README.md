@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.6-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.7-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -109,6 +109,20 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## ✨ O que mudou na 1.7
+
+| | |
+|---|---|
+| **O instalador travava** | quem tem no `libraryfolders.vdf` da Steam uma biblioteca num HD desconectado recebia `Join-Path : Nao e possivel localizar a unidade` e o instalador morria **antes de procurar o jogo**. O `Join-Path` do PowerShell resolve a unidade e lanca excecao se ela nao existe; trocado por concatenacao de texto nas 9 chamadas de risco. Quem estava travado na 1.5 ou 1.6 resolve com o instalador desta versao |
+| **Credito no KH2 e no Re:CoM** | os dois que faltavam. Como o bloco `DEVELOPED BY` troca de atlas quando o jogo detecta um controle, o credito foi para a **arte de fundo**, que o jogo desenha sempre. Com isso os **seis jogos** estao assinados |
+| **Re:CoM: Diario e Indice de Cartas** | tinham um setimo slot de idioma (`US_`) que o pipeline nao varria, e podiam abrir em ingles. Os dois slots agora sao cobertos |
+| **Re:CoM: 40 fichas de inimigo** | diziam `Limite: 3 reloads` e `Limite: 30 attacks`. A prova de que era esquecimento esta na mesma ficha, que logo abaixo ja trazia *Recarga Movel* e *Ataque Veloz*. Corrigido para **recargas** e **ataques** |
+
+> Rodar o instalador por cima basta, venha de qualquer versao: ele reconhece o
+> que voce tem pelo SHA-256 e aplica so a diferenca.
 
 ---
 

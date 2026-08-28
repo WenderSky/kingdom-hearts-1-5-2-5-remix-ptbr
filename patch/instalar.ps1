@@ -10,6 +10,19 @@ $ErrorActionPreference = "Stop"
 $Base = Split-Path -Parent $MyInvocation.MyCommand.Path
 $Xdelta = Join-Path $Base "xdelta3.exe"
 
+# Junta caminho SEM cobrar que a unidade exista.
+# O `Join-Path` do PowerShell resolve o PSDrive e **falha** com
+# `DriveNotFoundException` quando o caminho aponta para um disco que nao
+# esta' ligado. Isso derrubava o instalador de quem tem, no
+# `libraryfolders.vdf` da Steam, uma biblioteca num HD que saiu da
+# maquina: o arquivo continua listando a unidade, ela nao existe mais, e
+# o instalador morria antes de procurar o jogo (relatado na v1.5).
+# Aqui o caminho e' so' texto -- quem decide se existe e' o `Test-Path`.
+function Unir($a, $b) {
+    if (-not $a) { return $b }
+    return ($a.TrimEnd('\\') + '\\' + $b.TrimStart('\\'))
+}
+
 function Titulo($t) {
     Write-Host ""
     Write-Host "  $t" -ForegroundColor Cyan
@@ -40,7 +53,7 @@ function DepotEntrada($destino) {
     try {
         $steam = (Get-ItemProperty "HKCU:\Software\Valve\Steam" -Name SteamPath -ErrorAction Stop).SteamPath
     } catch { return $null }
-    $cache = Join-Path $steam "depotcache"
+    $cache = Unir $steam "depotcache"
     if (-not (Test-Path $cache)) { return $null }
     $arq = Get-ChildItem -LiteralPath $cache -Filter "2552433_*.manifest" -ErrorAction SilentlyContinue |
            Sort-Object LastWriteTime -Descending | Select-Object -First 1
@@ -165,13 +178,13 @@ function AcharJogo {
     } catch {}
     $bibliotecas = @()
     if ($steam) {
-        $bibliotecas += Join-Path $steam "steamapps\common"
+        $bibliotecas += Unir $steam "steamapps\common"
         # 2. as outras bibliotecas, listadas no libraryfolders.vdf
-        $vdf = Join-Path $steam "steamapps\libraryfolders.vdf"
+        $vdf = Unir $steam "steamapps\libraryfolders.vdf"
         if (Test-Path $vdf) {
             foreach ($linha in Get-Content $vdf) {
                 if ($linha -match '"path"\s+"(.+)"') {
-                    $bibliotecas += Join-Path ($matches[1] -replace '\\\\', '\') "steamapps\common"
+                    $bibliotecas += Unir ($matches[1] -replace '\\\\', '\') "steamapps\common"
                 }
             }
         }
@@ -182,8 +195,8 @@ function AcharJogo {
         $bibliotecas += "$($d.Name):\Program Files (x86)\Steam\steamapps\common"
     }
     foreach ($b in $bibliotecas) {
-        $tentativa = Join-Path $b $nome
-        if (Test-Path (Join-Path $tentativa "Image")) { return $tentativa }
+        $tentativa = Unir $b $nome
+        if (Test-Path (Unir $tentativa "Image")) { return $tentativa }
     }
     return $null
 }
@@ -197,7 +210,7 @@ $manifesto = Get-Content (Join-Path $Base "manifesto.json") -Raw -Encoding UTF8 
 Write-Host "  versao $($manifesto.versao)" -ForegroundColor DarkGray
 
 if (-not $Jogo) { $Jogo = AcharJogo }
-if (-not $Jogo -or -not (Test-Path (Join-Path $Jogo "Image"))) {
+if (-not $Jogo -or -not (Test-Path (Unir $Jogo "Image"))) {
     Titulo "Nao achei o jogo"
     Write-Host "  Rode assim, com o caminho da pasta do jogo:"
     Write-Host '    .\instalar.ps1 -Jogo "D:\SteamLibrary\steamapps\common\KINGDOM HEARTS -HD 1.5+2.5 ReMIX-"'
@@ -210,7 +223,7 @@ if ($Desinstalar) {
     Titulo "Desinstalando"
     $n = 0
     foreach ($a in $manifesto.arquivos) {
-        $alvo = Join-Path (Join-Path $Jogo "Image") $a.destino
+        $alvo = Unir (Unir $Jogo "Image") $a.destino
         $bkp = "$alvo.original"
         if (Test-Path $bkp) {
             Remove-Item -LiteralPath $alvo -Force -ErrorAction SilentlyContinue
@@ -242,7 +255,7 @@ $prontos = 0
 $totalConferir = ($manifesto.arquivos | ForEach-Object { $_.bytes_original } | Measure-Object -Sum).Sum
 IniciarBarra $totalConferir "lendo os arquivos do jogo"
 foreach ($a in $manifesto.arquivos) {
-    $alvo = Join-Path (Join-Path $Jogo "Image") $a.destino
+    $alvo = Unir (Unir $Jogo "Image") $a.destino
     if (-not (Test-Path $alvo)) {
         FecharBarra ""
         Write-Host "  FALTA       $($a.destino)" -ForegroundColor Red

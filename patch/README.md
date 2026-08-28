@@ -118,6 +118,20 @@ Diário) e **todo comando de interação** — é o que você lê na hora de agi
 
 ---
 
+## ✨ O que mudou na 1.7
+
+| | |
+|---|---|
+| **O instalador travava** | quem tem no `libraryfolders.vdf` da Steam uma biblioteca num HD desconectado recebia `Join-Path : Nao e possivel localizar a unidade` e o instalador morria **antes de procurar o jogo**. O `Join-Path` do PowerShell resolve a unidade e lanca excecao se ela nao existe; trocado por concatenacao de texto nas 9 chamadas de risco. Quem estava travado na 1.5 ou 1.6 resolve com o instalador desta versao |
+| **Credito no KH2 e no Re:CoM** | os dois que faltavam. Como o bloco `DEVELOPED BY` troca de atlas quando o jogo detecta um controle, o credito foi para a **arte de fundo**, que o jogo desenha sempre. Com isso os **seis jogos** estao assinados |
+| **Re:CoM: Diario e Indice de Cartas** | tinham um setimo slot de idioma (`US_`) que o pipeline nao varria, e podiam abrir em ingles. Os dois slots agora sao cobertos |
+| **Re:CoM: 40 fichas de inimigo** | diziam `Limite: 3 reloads` e `Limite: 30 attacks`. A prova de que era esquecimento esta na mesma ficha, que logo abaixo ja trazia *Recarga Movel* e *Ataque Veloz*. Corrigido para **recargas** e **ataques** |
+
+> Rodar o instalador por cima basta, venha de qualquer versao: ele reconhece o
+> que voce tem pelo SHA-256 e aplica so a diferenca.
+
+---
+
 ## ✍️ O que mudou na 1.6
 
 Esta versão não corrige nada: ela **assina** a tradução dentro do jogo, na
