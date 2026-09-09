@@ -1,5 +1,12 @@
 # v1.8 — as linhas que passavam da caixa
 
+## 🎬 Os vídeos legendados estão aqui também
+
+O `KH_Videos_PTBR_v1.0.zip` (1,74 GB) agora vem anexado nesta release, para
+ninguém precisar caçar a v1.0 lá embaixo. É **o mesmo arquivo** publicado na
+1.0: os vídeos não mudaram desde então, e quem já os instalou não precisa
+baixar de novo. Ele é opcional e independente do `KH_PTBR_v1.8.zip`.
+
 Versão pequena, de acabamento: doze frases do Re:CoM e uma linha de ajuda do
 BbS que passavam da largura da caixa.
 
@@ -61,3 +68,4 @@ Os outros **não mudam** em relação à 1.7.
 
 O instalador reconhece a versão pelo **SHA-256** de cada arquivo, não pelo
 número. Quem está em qualquer versão de 1.0 a 1.7 vai direto à 1.8.
+

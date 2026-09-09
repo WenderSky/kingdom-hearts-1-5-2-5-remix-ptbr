@@ -37,11 +37,14 @@ Infelizmente alguns textos acabam vazando da caixa.
 
 | pacote | tamanho | o que faz |
 |---|---:|---|
-| **`KH_PTBR`** | 18 MB | traduz o texto dos seis jogos |
+| **`KH_PTBR`** | 96 MB | traduz o texto dos seis jogos |
 | **`KH_Videos_PTBR`** | 1,74 GB | legenda os 10 vídeos que têm o texto pintado na imagem |
 
 O segundo é **opcional e independente** — vídeo legendado é recodificado, então
-não cabe num patch pequeno. Quem só quer a tradução baixa 18 MB.
+não cabe num patch pequeno. Quem só quer a tradução baixa só o primeiro.
+
+Os dois zips ficam anexados na **release mais recente**, não precisa procurar
+em versão antiga.
 
 ---
 
