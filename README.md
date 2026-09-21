@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.8-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.9-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -37,7 +37,7 @@ Infelizmente alguns textos acabam vazando da caixa.
 
 | pacote | tamanho | o que faz |
 |---|---:|---|
-| **`KH_PTBR`** | 96 MB | traduz o texto dos seis jogos |
+| **`KH_PTBR`** | 98 MB | traduz o texto dos seis jogos |
 | **`KH_Videos_PTBR`** | 1,74 GB | legenda os 10 vídeos que têm o texto pintado na imagem |
 
 O segundo é **opcional e independente** — vídeo legendado é recodificado, então
@@ -112,6 +112,23 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## 🐛 O que mudou na 1.9
+
+Quase tudo aqui saiu de **um relatório de quem estava jogando**.
+
+| | |
+|---|---|
+| **`Lscuta` e mais 42** | certas falas do KH2 apareciam com uma letra inglesa grudada na frente: `Peitão` no lugar de `Leitão`, `Wchamos o computador`, `Sntão você QUERIA mesmo ser rei!`. A culpa não era da tradução — a ferramenta que lê o texto do jogo engolia a **primeira letra** de falas abertas por um comando invisível, e quem traduziu recebeu a frase já sem ela. São 60 falas com o defeito; em 17 a inicial do português calhava de ser a mesma e ninguém notava, nas outras **43** saía errado |
+| **Nomes de rua do Twilight Town** | ora `Rua do Mercado`, ora `Market Street`. Agora todos em inglês — porque **as placas na tela são imagem** e continuam em inglês, e traduzir o nome na fala só atrapalhava quem procurava o caminho. A maioria já estava assim: 47 ocorrências contra 30 |
+| **O Setzer** | no original ele te chama de `Rucksack`, pela bolsa do Roxas, de deboche. `Ei. Mochila.` ficou literal demais e soava como se ele chamasse um objeto; virou **`Ei. Mochileiro.`** |
+| **O diário do Roxas** | 55 textos dos dois filmes passavam da largura da caixa sem que a régua acusasse: ela contava o **`ã` como largura zero**, e media `Organização` como se fosse `Organizaço`. Com a conta certa, todos foram requebrados — **nenhuma palavra mudou**, só onde a linha quebra |
+| **Continua em inglês, e é imagem** | as telas de tutorial (habilidades, auto-reload, regras do Struggle), o quadro de empregos do Roxas e o `OBTAINED` do baú **não são texto**: têm as letras desenhadas dentro, e a Square fez uma versão de cada uma por idioma. Só o `OBTAINED` aparece em 19 texturas, uma por mundo. Fica para uma versão de arte |
+
+> Rodar o instalador por cima basta, venha de qualquer versão: ele reconhece o
+> que você tem pelo SHA-256 e aplica só a diferença.
 
 ---
 

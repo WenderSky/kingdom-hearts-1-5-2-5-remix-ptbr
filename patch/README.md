@@ -118,6 +118,23 @@ Diário) e **todo comando de interação** — é o que você lê na hora de agi
 
 ---
 
+## 🐛 O que mudou na 1.9
+
+Quase tudo aqui saiu de **um relatório de quem estava jogando**.
+
+| | |
+|---|---|
+| **`Lscuta` e mais 42** | certas falas do KH2 apareciam com uma letra inglesa grudada na frente: `Peitão` no lugar de `Leitão`, `Wchamos o computador`, `Sntão você QUERIA mesmo ser rei!`. A culpa não era da tradução — a ferramenta que lê o texto do jogo engolia a **primeira letra** de falas abertas por um comando invisível, e quem traduziu recebeu a frase já sem ela. São 60 falas com o defeito; em 17 a inicial do português calhava de ser a mesma e ninguém notava, nas outras **43** saía errado |
+| **Nomes de rua do Twilight Town** | ora `Rua do Mercado`, ora `Market Street`. Agora todos em inglês — porque **as placas na tela são imagem** e continuam em inglês, e traduzir o nome na fala só atrapalhava quem procurava o caminho. A maioria já estava assim: 47 ocorrências contra 30 |
+| **O Setzer** | no original ele te chama de `Rucksack`, pela bolsa do Roxas, de deboche. `Ei. Mochila.` ficou literal demais e soava como se ele chamasse um objeto; virou **`Ei. Mochileiro.`** |
+| **O diário do Roxas** | 55 textos dos dois filmes passavam da largura da caixa sem que a régua acusasse: ela contava o **`ã` como largura zero**, e media `Organização` como se fosse `Organizaço`. Com a conta certa, todos foram requebrados — **nenhuma palavra mudou**, só onde a linha quebra |
+| **Continua em inglês, e é imagem** | as telas de tutorial (habilidades, auto-reload, regras do Struggle), o quadro de empregos do Roxas e o `OBTAINED` do baú **não são texto**: têm as letras desenhadas dentro, e a Square fez uma versão de cada uma por idioma. Só o `OBTAINED` aparece em 19 texturas, uma por mundo. Fica para uma versão de arte |
+
+> Rodar o instalador por cima basta, venha de qualquer versão: ele reconhece o
+> que você tem pelo SHA-256 e aplica só a diferença.
+
+---
+
 ## 📏 O que mudou na 1.8
 
 Versao de acabamento: as linhas que passavam da largura da caixa.
