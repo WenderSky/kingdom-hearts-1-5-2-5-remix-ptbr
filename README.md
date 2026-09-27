@@ -4,8 +4,9 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.10-blue?style=for-the-badge)
-![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.11-blue?style=for-the-badge)
+![Jogos](https://img.shields.io/badge/texto-100%25-success?style=for-the-badge)
+![Texturas](https://img.shields.io/badge/texturas-6%25-orange?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
 
@@ -93,6 +94,11 @@ a própria Square marca o que tem letra dentro.</sub>
 O instalador acha o jogo sozinho, confere cada arquivo pelo SHA-256, aplica os
 patches com barra de progresso e confere o resultado. Se algo não bater, ele
 para **antes** de escrever qualquer coisa.
+
+> ⏳ **Demora alguns minutos, e isso é normal.** São os **27 GB do jogo
+> conferidos pelo SHA-256 antes de escrever qualquer coisa**, e conferidos de
+> novo depois. Se a barra estiver andando, está tudo certo — é só deixar
+> terminar.
 
 ### Vídeos
 

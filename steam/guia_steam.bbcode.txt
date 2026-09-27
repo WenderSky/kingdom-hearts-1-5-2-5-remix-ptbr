@@ -24,18 +24,23 @@ arquivos, e você escolhe [b]um dos dois primeiros[/b]:
 [tr][td][b]KH_Videos_PTBR[/b][/td][td]legenda os 10 vídeos que têm texto pintado na imagem[/td][/tr]
 [/table]
 
-[b]Os dois primeiros têm o texto idêntico[/b] — a diferença é só a arte. Os
-letreiros de sala são imagem, com as letras desenhadas dentro, e estão sendo
-refeitos aos poucos: [b]47 dos 233[/b] por enquanto. Enquanto não fecham, quem
-instalar o pacote com texturas vai andar de uma sala com a placa em português
-para outra ainda em inglês. Se isso incomodar mais do que a placa em inglês,
-instale o [b]KH_PTBR[/b] e espere — dá para trocar de um para o outro depois,
+[b]Os dois primeiros têm o texto idêntico[/b] — a diferença é só a arte.
+As texturas ainda estão sendo refeitas aos poucos, então quem instalar o pacote
+com elas vai andar de uma sala com a placa em português para outra ainda em
+inglês. Se isso incomodar mais do que a placa em inglês, instale o
+[b]KH_PTBR[/b] e espere fechar. [b]Dá para trocar de um para o outro depois[/b],
 sem reinstalar o jogo e sem perder save.
 
 [b]Windows:[/b] extraia e clique duas vezes em [b]Instalar.bat[/b].
 [b]Steam Deck:[/b] extraia e rode [b]SteamDeck/instalar.sh[/b].
 [b]Os vídeos:[/b] não têm instalador — arraste a pasta [b]STEAM[/b] para dentro
 da pasta do jogo e mande substituir.
+
+[b]⏳ A instalação demora alguns minutos, e isso é normal.[/b] O instalador
+confere [b]os 27 GB do jogo pelo SHA-256 antes de escrever qualquer coisa[/b],
+aplica os patches e confere o resultado de novo. Tem barra de progresso — se
+ela estiver andando, está tudo certo, só deixe terminar. E se algum arquivo não
+bater, ele [b]para antes de mexer no jogo[/b] e diz o que fazer.
 
 [b]⚠️ Deixe o jogo em INGLÊS.[/b] É o slot que a tradução ocupa: em qualquer
 outro idioma o texto sai no original. É a única coisa que você precisa lembrar.
@@ -74,24 +79,18 @@ erros que já foram corrigidos apareceram.
 
 [hr][/hr]
 
-[h1]🖼️ As texturas: quanto já está em português[/h1]
+[h1]🖼️ As texturas: o que são e quanto já está pronto[/h1]
 
 O texto está 100% há várias versões. O que ainda aparece em inglês é [b]arte
-com a letra desenhada dentro[/b] — letreiro de sala, [b]CLEAR![/b],
-[b]NEW RECORD[/b], tela de tutorial, quadro de aviso. Cada uma tem de ser
-redesenhada à mão, e este quadro sobe a cada lote:
+com a letra desenhada dentro[/b] — o letreiro que passa ao entrar numa sala,
+[b]CLEAR![/b], [b]NEW RECORD[/b], telas de tutorial, quadros de aviso. Não é
+texto: é imagem, e a Square fez uma versão de cada uma para cada idioma. Cada
+uma tem de ser [b]redesenhada à mão[/b].
 
-[table]
-[tr][th]jogo[/th][th]texturas com texto[/th][th]em português[/th][th][/th][/tr]
-[tr][td]KINGDOM HEARTS FINAL MIX[/td][td]64[/td][td]11[/td][td]17%[/td][/tr]
-[tr][td]Re:Chain of Memories[/td][td]162[/td][td]2[/td][td]1%[/td][/tr]
-[tr][td]KINGDOM HEARTS II FINAL MIX[/td][td]1428[/td][td]82[/td][td]6%[/td][/tr]
-[tr][td]Birth by Sleep[/td][td]75[/td][td]15[/td][td]20%[/td][/tr]
-[tr][td][b]total[/b][/td][td][b]1729[/b][/td][td][b]110[/b][/td][td][b]6%[/b][/td][/tr]
-[/table]
+[b]Hoje: 6% delas estão em português[/b] — e esse número sobe a cada versão.
 
 A frente que está andando agora são os [b]letreiros de sala do KINGDOM HEARTS
-II[/b]: 47 de 233, com Twilight Town inteiro pronto e Hollow Bastion em
+II[/b]: o Twilight Town inteiro já está pronto, e o Hollow Bastion está em
 andamento.
 
 [hr][/hr]
