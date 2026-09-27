@@ -14,14 +14,23 @@ ainda acabam vazando da caixa.
 
 [h1]📥 Como instalar[/h1]
 
-[b]Um patch só traduz os seis jogos.[/b] Não há um pacote por jogo — são dois
-arquivos no total, e o segundo é opcional:
+[b]Um patch só traduz os seis jogos.[/b] Não há um pacote por jogo. São três
+arquivos, e você escolhe [b]um dos dois primeiros[/b]:
 
 [table]
-[tr][th]pacote[/th][th]tamanho[/th][th]o que faz[/th][/tr]
-[tr][td][b]KH_PTBR[/b][/td][td]18 MB[/td][td]traduz o texto — a coletânea inteira de uma vez[/td][/tr]
-[tr][td][b]KH_Videos_PTBR[/b][/td][td]1,74 GB[/td][td]legenda os 10 vídeos que têm texto pintado na imagem[/td][/tr]
+[tr][th]pacote[/th][th]o que faz[/th][/tr]
+[tr][td][b]KH_PTBR[/b][/td][td]a tradução de texto, completa[/td][/tr]
+[tr][td][b]KH_PTBR_Texturas[/b][/td][td]o mesmo, [b]mais[/b] os letreiros de sala redesenhados[/td][/tr]
+[tr][td][b]KH_Videos_PTBR[/b][/td][td]legenda os 10 vídeos que têm texto pintado na imagem[/td][/tr]
 [/table]
+
+[b]Os dois primeiros têm o texto idêntico[/b] — a diferença é só a arte. Os
+letreiros de sala são imagem, com as letras desenhadas dentro, e estão sendo
+refeitos aos poucos: [b]47 dos 233[/b] por enquanto. Enquanto não fecham, quem
+instalar o pacote com texturas vai andar de uma sala com a placa em português
+para outra ainda em inglês. Se isso incomodar mais do que a placa em inglês,
+instale o [b]KH_PTBR[/b] e espere — dá para trocar de um para o outro depois,
+sem reinstalar o jogo e sem perder save.
 
 [b]Windows:[/b] extraia e clique duas vezes em [b]Instalar.bat[/b].
 [b]Steam Deck:[/b] extraia e rode [b]SteamDeck/instalar.sh[/b].
@@ -62,6 +71,28 @@ de texto e de imagem; a lógica do jogo não é tocada.
 
 [b]Se achar algo, comente no guia[/b] com o print e onde foi. É assim que os
 erros que já foram corrigidos apareceram.
+
+[hr][/hr]
+
+[h1]🖼️ As texturas: quanto já está em português[/h1]
+
+O texto está 100% há várias versões. O que ainda aparece em inglês é [b]arte
+com a letra desenhada dentro[/b] — letreiro de sala, [b]CLEAR![/b],
+[b]NEW RECORD[/b], tela de tutorial, quadro de aviso. Cada uma tem de ser
+redesenhada à mão, e este quadro sobe a cada lote:
+
+[table]
+[tr][th]jogo[/th][th]texturas com texto[/th][th]em português[/th][th][/th][/tr]
+[tr][td]KINGDOM HEARTS FINAL MIX[/td][td]64[/td][td]11[/td][td]17%[/td][/tr]
+[tr][td]Re:Chain of Memories[/td][td]162[/td][td]2[/td][td]1%[/td][/tr]
+[tr][td]KINGDOM HEARTS II FINAL MIX[/td][td]1428[/td][td]82[/td][td]6%[/td][/tr]
+[tr][td]Birth by Sleep[/td][td]75[/td][td]15[/td][td]20%[/td][/tr]
+[tr][td][b]total[/b][/td][td][b]1729[/b][/td][td][b]110[/b][/td][td][b]6%[/b][/td][/tr]
+[/table]
+
+A frente que está andando agora são os [b]letreiros de sala do KINGDOM HEARTS
+II[/b]: 47 de 233, com Twilight Town inteiro pronto e Hollow Bastion em
+andamento.
 
 [hr][/hr]
 

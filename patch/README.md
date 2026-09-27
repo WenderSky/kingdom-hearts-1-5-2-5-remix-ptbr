@@ -4,12 +4,23 @@
 
 ### A coletânea inteira em português. Um patch só.
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.2-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.11-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
-![Download](https://img.shields.io/badge/download-23_MB-orange?style=for-the-badge)
+![Download](https://img.shields.io/badge/download-95_MB-orange?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
 
 </div>
+
+---
+
+> ### 📦 Este é o pacote **de texto**
+>
+> Traduz o texto dos seis jogos, mais toda a arte que já está 100%.
+> **Não traz os letreiros de sala**, que ainda estão sendo redesenhados.
+>
+> Se você prefere já ver as placas em português mesmo com parte delas ainda em
+> inglês, baixe o **`KH_PTBR_v1.11_Texturas.zip`** na mesma release. O texto é
+> idêntico nos dois, e dá para trocar de um para o outro depois.
 
 ---
 
@@ -115,6 +126,31 @@ antes e depois — é por ele que se confere se deu certo.
 
 Traduz-se **tudo o que descreve** (efeito de item, ficha de inimigo, resumo do
 Diário) e **todo comando de interação** — é o que você lê na hora de agir.
+
+---
+
+## 🖼️ O que mudou na 1.10
+
+Na 1.9 eu escrevi que as telas de tutorial, o quadro de empregos e o
+`OBTAINED` do baú continuavam em inglês porque **não são texto**: são imagem,
+com as letras desenhadas dentro. Esta versão redesenha essas imagens.
+
+| | |
+|---|---|
+| **KH2: o baú e a HUD** | `OBTAINED` → **`OBTIDO`**, `GET BONUS!` → **`BÔNUS!`**, `LEVEL UP!` → **`NÍVEL ↑!`**, `INFORMATION` → **`INFORMAÇÃO`**, `LV.` → **`NV.`**. O `OBTAINED` sozinho aparece em **19 texturas** — uma cópia da HUD por mundo |
+| **KH2: o quadro de empregos** | `HELP WANTED` → **`PRECISA-SE`** (na placa e no neon), `NEW!!` → **`NOVO!`**, `HI SCORE` → **`RECORDE`** |
+| **KH2: os cartões do prólogo** | `THE 1st DAY` → **`O 1º DIA`** |
+| **KH2: as telas de tutorial** | habilidades, auto-reload e as regras do Struggle, **inclusive as capturas de menu de dentro delas** |
+| **KH1: o mapa-múndi** | `MISSION`/`LEVEL` → **`MISSÃO`**/**`NÍVEL`**, `SCORE` → **`PONTOS`**, `NEW HIGH SCORE` → **`NOVO RECORDE`**, `MISSION COMPLETE` → **`MISSÃO COMPLETADA`**, `GUMMI GARAGE` → **`GARAGEM GUMMI`** |
+| **Uma confissão** | as cinco texturas do mapa-múndi estavam traduzidas **desde sempre** e nunca chegaram ao jogo: moravam num pacote que a distribuição não incluía. Nada acusou, porque ninguém reclama de um arquivo que não é procurado. Entram agora — e foram refeitas, porque as antigas tinham a fonte trocada e fundo opaco atrás das letras |
+
+Nada disso foi escrito com uma fonte parecida: o desenho de cada palavra saiu
+das **próprias texturas do jogo**, colhido da versão espanhola, que usa a mesma
+fonte. Os acentos `ã` e `í`, que não existem nessa fonte em idioma nenhum,
+foram desenhados à mão.
+
+> O pacote `kh1_fourth` é **novo na distribuição**. Quem vem de qualquer versão
+> anterior o tem de fábrica, e o instalador aplica o patch nele normalmente.
 
 ---
 

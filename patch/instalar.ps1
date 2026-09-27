@@ -343,8 +343,11 @@ FecharBarra ("conferidos {0} arquivos: {1} a traduzir, {2} ja' prontos" -f `
     $manifesto.arquivos.Count, $fazer.Count, $prontos)
 $atualizando = @($fazer | Where-Object { $_.delta }).Count
 if ($atualizando) {
-    Write-Host ("  {0} arquivo(s) vem de uma versao anterior da traducao - " +
-                "atualizando no lugar" -f $atualizando) -ForegroundColor Green
+    # O `-f` liga mais forte que o `+`: sem os parenteses em volta da soma
+    # ele formatava so' a SEGUNDA string -- que nao tem marcador -- e a
+    # primeira saia com o `{0}` cru na tela do jogador.
+    Write-Host ((("  {0} arquivo(s) vem de uma versao anterior da traducao - " +
+                  "atualizando no lugar") -f $atualizando)) -ForegroundColor Green
 }
 
 if ($fazer.Count -eq 0) {

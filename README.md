@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.9-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.10-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -33,18 +33,53 @@ Infelizmente alguns textos acabam vazando da caixa.
 
 ---
 
-## 📦 São dois pacotes
+## 📦 São três pacotes
 
-| pacote | tamanho | o que faz |
-|---|---:|---|
-| **`KH_PTBR`** | 98 MB | traduz o texto dos seis jogos |
-| **`KH_Videos_PTBR`** | 1,74 GB | legenda os 10 vídeos que têm o texto pintado na imagem |
+| pacote | o que faz |
+|---|---|
+| **`KH_PTBR`** | a tradução de texto dos seis jogos, completa |
+| **`KH_PTBR_Texturas`** | o mesmo, **mais** os letreiros de sala redesenhados |
+| **`KH_Videos_PTBR`** | legenda os 10 vídeos que têm o texto pintado na imagem |
 
-O segundo é **opcional e independente** — vídeo legendado é recodificado, então
-não cabe num patch pequeno. Quem só quer a tradução baixa só o primeiro.
+**Escolha um dos dois primeiros, não os dois.** Eles são a mesma tradução; o
+segundo só acrescenta a arte.
 
-Os dois zips ficam anexados na **release mais recente**, não precisa procurar
+Por que existe essa escolha: os letreiros de sala são **imagem**, com as letras
+desenhadas dentro, e estão sendo refeitos aos poucos (veja o quadro abaixo).
+Enquanto não fecham, quem instalar o pacote com texturas vai andar de uma sala
+com a placa em português para outra ainda em inglês. Se isso incomodar mais do
+que a placa em inglês, instale o **`KH_PTBR`** e espere — o texto é o mesmo nos
+dois, e dá para trocar de um para o outro depois sem reinstalar o jogo.
+
+O pacote de vídeos é **opcional e independente** dos outros dois: vídeo
+legendado é recodificado, então não cabe num patch pequeno.
+
+Os três zips ficam anexados na **release mais recente**, não precisa procurar
 em versão antiga.
+
+---
+
+## 🖼️ Texturas: quanto já está em português
+
+O texto está 100% há versões. O que ainda aparece em inglês é **arte com a
+letra desenhada dentro** — letreiro de sala, `CLEAR!`, `NEW RECORD`, tela de
+tutorial, quadro de aviso. Cada uma tem de ser redesenhada à mão, uma a uma, e
+este quadro sobe a cada lote:
+
+| jogo | texturas com texto | em português | |
+|---|---:|---:|---|
+| KINGDOM HEARTS FINAL MIX | 64 | 11 | 17% |
+| Re:Chain of Memories | 162 | 2 | 1% |
+| KINGDOM HEARTS II FINAL MIX | 1428 | 82 | 6% |
+| Birth by Sleep | 75 | 15 | 20% |
+| **total** | **1729** | **110** | **6%** |
+
+E os **letreiros de sala do KH2**, que é a frente que está andando agora:
+**47 de 233 — 20%**. Twilight Town inteiro pronto, Hollow Bastion em andamento.
+
+<sub>A conta é automática: vale como "textura com texto" toda arte que o jogo
+guarda numa cópia por idioma **e** cujo conteúdo muda entre eles — é assim que
+a própria Square marca o que tem letra dentro.</sub>
 
 ---
 
@@ -112,6 +147,31 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## 🖼️ O que mudou na 1.10
+
+Na 1.9 eu escrevi que as telas de tutorial, o quadro de empregos e o
+`OBTAINED` do baú continuavam em inglês porque **não são texto**: são imagem,
+com as letras desenhadas dentro. Esta versão redesenha essas imagens.
+
+| | |
+|---|---|
+| **KH2: o baú e a HUD** | `OBTAINED` → **`OBTIDO`**, `GET BONUS!` → **`BÔNUS!`**, `LEVEL UP!` → **`NÍVEL ↑!`**, `INFORMATION` → **`INFORMAÇÃO`**, `LV.` → **`NV.`**. O `OBTAINED` sozinho aparece em **19 texturas** — uma cópia da HUD por mundo |
+| **KH2: o quadro de empregos** | `HELP WANTED` → **`PRECISA-SE`** (na placa e no neon), `NEW!!` → **`NOVO!`**, `HI SCORE` → **`RECORDE`** |
+| **KH2: os cartões do prólogo** | `THE 1st DAY` → **`O 1º DIA`** |
+| **KH2: as telas de tutorial** | habilidades, auto-reload e as regras do Struggle, **inclusive as capturas de menu de dentro delas** |
+| **KH1: o mapa-múndi** | `MISSION`/`LEVEL` → **`MISSÃO`**/**`NÍVEL`**, `SCORE` → **`PONTOS`**, `NEW HIGH SCORE` → **`NOVO RECORDE`**, `MISSION COMPLETE` → **`MISSÃO COMPLETADA`**, `GUMMI GARAGE` → **`GARAGEM GUMMI`** |
+| **Uma confissão** | as cinco texturas do mapa-múndi estavam traduzidas **desde sempre** e nunca chegaram ao jogo: moravam num pacote que a distribuição não incluía. Nada acusou, porque ninguém reclama de um arquivo que não é procurado. Entram agora — e foram refeitas, porque as antigas tinham a fonte trocada e fundo opaco atrás das letras |
+
+Nada disso foi escrito com uma fonte parecida: o desenho de cada palavra saiu
+das **próprias texturas do jogo**, colhido da versão espanhola, que usa a mesma
+fonte. Os acentos `ã` e `í`, que não existem nessa fonte em idioma nenhum,
+foram desenhados à mão.
+
+> O pacote `kh1_fourth` é **novo na distribuição**. Quem vem de qualquer versão
+> anterior o tem de fábrica, e o instalador aplica o patch nele normalmente.
 
 ---
 
@@ -351,9 +411,13 @@ Tudo aqui saiu de relatos de quem instalou a 1.0 e jogou.
 
 | pasta | conteúdo |
 |---|---|
-| **`patch/`** | o pacote de tradução completo — os 22 patches, o instalador e o manifesto |
+| **`patch/`** | o pacote **de texto** — os patches, o instalador e o manifesto |
 | **`videos/`** | o leia-me do pacote de vídeos (os `.mp4` vão nos Releases: 1,74 GB) |
 | **`steam/`** | o guia da Steam em BBCode e a capa dele |
+
+O pacote **com texturas** não fica no repositório: ele só muda dois arquivos em
+relação ao de texto, e guardar os dois aqui dobraria o tamanho a cada versão.
+Ele está anexado na **release**, como `KH_PTBR_vX.Y_Texturas.zip`.
 
 ---
 

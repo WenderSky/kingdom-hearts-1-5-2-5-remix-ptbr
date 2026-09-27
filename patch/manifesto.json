@@ -1,5 +1,5 @@
 {
- "versao": "1.9",
+ "versao": "1.11",
  "jogo": "KINGDOM HEARTS HD 1.5+2.5 ReMIX",
  "conteudo": "tradução PT-BR de texto — a coletânea inteira",
  "arquivos": [
@@ -7,7 +7,7 @@
    "destino": "dt/kh1_first.pkg",
    "delta": "kh1_first.pkg.xdelta",
    "sha256_original": "d082325abc478eb9196d70af80d1be570032e693d5ce50d29df571459aee8d0e",
-   "sha256_traduzido": "d48236185e0ad6243b6d48d2502e0e26b6989a8fa42ebfbe95994019336fe983",
+   "sha256_traduzido": "8a6adb90d6a8dcaa2d39200c8b45990f0aa5f454128c6763d8a058200bdab7fe",
    "bytes_original": 919711488,
    "jogo": "KINGDOM HEARTS FINAL MIX",
    "atualizacoes": [
@@ -35,6 +35,11 @@
      "versao": "1.5",
      "de": "bad3a2c98eec0b85d54f39e07b368fa605075424003fd5137a95f52b09107cbe",
      "delta": "kh1_first.pkg.de1_5.xdelta"
+    },
+    {
+     "versao": "1.6",
+     "de": "d48236185e0ad6243b6d48d2502e0e26b6989a8fa42ebfbe95994019336fe983",
+     "delta": "kh1_first.pkg.de1_6.xdelta"
     }
    ]
   },
@@ -42,7 +47,7 @@
    "destino": "dt/kh1_first.hed",
    "delta": "kh1_first.hed.xdelta",
    "sha256_original": "5eb432b333a923dbbb1c84dc72834985f55501da27368d73aceaee11f78d4267",
-   "sha256_traduzido": "3e77ca8dd40653a4939ee25832bd74958198d7c0ab7f71aef44e43e8cb4fff51",
+   "sha256_traduzido": "1265e7f09a18af8fe19731d3649517b09cc8dbb4944926d8949e8b6d62424a30",
    "bytes_original": 19232,
    "jogo": "KINGDOM HEARTS FINAL MIX",
    "atualizacoes": [
@@ -70,6 +75,11 @@
      "versao": "1.5",
      "de": "8875fd6489721f5a3f25c548b75ebedf468951b8179a8c6e6f7e8b78c266d1ee",
      "delta": "kh1_first.hed.de1_5.xdelta"
+    },
+    {
+     "versao": "1.6",
+     "de": "3e77ca8dd40653a4939ee25832bd74958198d7c0ab7f71aef44e43e8cb4fff51",
+     "delta": "kh1_first.hed.de1_6.xdelta"
     }
    ]
   },
@@ -77,7 +87,7 @@
    "destino": "dt/kh1_second.pkg",
    "delta": "kh1_second.pkg.xdelta",
    "sha256_original": "c68d57e4a0c66465d04f9dafcb3cf75bc808f70b3d3e233f8a97108419c1eb37",
-   "sha256_traduzido": "14e4903a59d9c90fa7e58008b044549126dd1ee740a03ecc0d0091af4598c87e",
+   "sha256_traduzido": "230f3e524c4815cbcdb70a20913816b04c18bc4d4af2dc8dcb283f7f1db61e5a",
    "bytes_original": 3020124848,
    "jogo": "KINGDOM HEARTS FINAL MIX",
    "atualizacoes": [
@@ -85,6 +95,11 @@
      "versao": "1.0",
      "de": "b2ba2e0a02bb0bcc68355ab7f74caf35b6b33ee7ac86f403e7ab62a9c0000516",
      "delta": "kh1_second.pkg.de1_0.xdelta"
+    },
+    {
+     "versao": "1.9",
+     "de": "14e4903a59d9c90fa7e58008b044549126dd1ee740a03ecc0d0091af4598c87e",
+     "delta": "kh1_second.pkg.de1_9.xdelta"
     }
    ]
   },
@@ -92,7 +107,7 @@
    "destino": "dt/kh1_second.hed",
    "delta": "kh1_second.hed.xdelta",
    "sha256_original": "1b6df4252f5938ce601b3a12d457bdeb95768764eefd36a3f146cc927d29aa46",
-   "sha256_traduzido": "92ea814b70c67b24019fc2be45c4a17409f55144603e98e0db8b588b4a79cd48",
+   "sha256_traduzido": "1da7a60eaa9699b4673f1d628e4e8dcff031b500c55196f705a3b56346ab0466",
    "bytes_original": 25248,
    "jogo": "KINGDOM HEARTS FINAL MIX",
    "atualizacoes": [
@@ -100,6 +115,11 @@
      "versao": "1.0",
      "de": "d1a2ec09eb6391e3012ca977ec77a6e79a6e5720151daae3701c4874dc6e0ca3",
      "delta": "kh1_second.hed.de1_0.xdelta"
+    },
+    {
+     "versao": "1.9",
+     "de": "92ea814b70c67b24019fc2be45c4a17409f55144603e98e0db8b588b4a79cd48",
+     "delta": "kh1_second.hed.de1_9.xdelta"
     }
    ]
   },
@@ -107,7 +127,7 @@
    "destino": "dt/kh1_third.pkg",
    "delta": "kh1_third.pkg.xdelta",
    "sha256_original": "ca585d23ca13ad8662d96c18aa1fa9015d027cd3395234b0797d6dd22dd39331",
-   "sha256_traduzido": "9136033f17f6e5dd0e2982c8f13cf2add5101407c9c790dbbb20d87f846805da",
+   "sha256_traduzido": "6bc79956c0dea5d0932b386dd632cea1bd84daefc8ab14e0ecd71dba29d9fae4",
    "bytes_original": 2208449920,
    "jogo": "KINGDOM HEARTS FINAL MIX",
    "atualizacoes": [
@@ -125,6 +145,11 @@
      "versao": "1.3",
      "de": "ed94771e39719f5c10e7b349fa34f6a47a31a5fe1958130d7dc43cb5bd6c40e0",
      "delta": "kh1_third.pkg.de1_3.xdelta"
+    },
+    {
+     "versao": "1.5",
+     "de": "9136033f17f6e5dd0e2982c8f13cf2add5101407c9c790dbbb20d87f846805da",
+     "delta": "kh1_third.pkg.de1_5.xdelta"
     }
    ]
   },
@@ -132,7 +157,7 @@
    "destino": "dt/kh1_third.hed",
    "delta": "kh1_third.hed.xdelta",
    "sha256_original": "12c4c7f3a7fcb1d0e31e99e7d5a3a4ec5576f0169eb1ec3a9946890ab63104d7",
-   "sha256_traduzido": "95f48d7d22927d3cfb9bd3219693286343b157d0f3d098eabe8debe9d973cc6b",
+   "sha256_traduzido": "03438def9ddcf81993a8f2ecfb58ad6a02be793b4e0e7fece400bec5f0c916a5",
    "bytes_original": 25248,
    "jogo": "KINGDOM HEARTS FINAL MIX",
    "atualizacoes": [
@@ -145,8 +170,31 @@
      "versao": "1.2",
      "de": "2b786fc453d5be9e2ec13b198e1630e4d094f642c2037c5d8e94f885872011fb",
      "delta": "kh1_third.hed.de1_2.xdelta"
+    },
+    {
+     "versao": "1.3",
+     "de": "95f48d7d22927d3cfb9bd3219693286343b157d0f3d098eabe8debe9d973cc6b",
+     "delta": "kh1_third.hed.de1_3.xdelta"
     }
    ]
+  },
+  {
+   "destino": "dt/kh1_fourth.pkg",
+   "jogo": "KINGDOM HEARTS FINAL MIX",
+   "bytes_original": 1348145040,
+   "sha256_original": "aadb225367c79c735945780754396661393c24ae6239fc00d8a00fe9618f3b2a",
+   "sha256_traduzido": "3867f7da6075c364c1cf429cb93cbba2078b87e9e2fd0a98d7a09fa122add58b",
+   "delta": "kh1_fourth.pkg.xdelta",
+   "atualizacoes": []
+  },
+  {
+   "destino": "dt/kh1_fourth.hed",
+   "jogo": "KINGDOM HEARTS FINAL MIX",
+   "bytes_original": 25248,
+   "sha256_original": "1194c608b488788359b768add5c4db56118744cc672184afb54576a04ae6abb1",
+   "sha256_traduzido": "a332f2938ea66db070890f36dbb0f176311729b4c10b194df746d534a9bf1657",
+   "delta": "kh1_fourth.hed.xdelta",
+   "atualizacoes": []
   },
   {
    "destino": "dt/Theater.pkg",
@@ -336,24 +384,34 @@
    "destino": "dt/kh2_first.pkg",
    "delta": "kh2_first.pkg.xdelta",
    "sha256_original": "642c22efebd8cc4efcd0a37a21ffc7c38594d2b1790516970881efc0e4b84190",
-   "sha256_traduzido": "66bff18619cb4bd437a0544296c309ab490f70a22a30a21f0a66fcf8bb2f0f72",
+   "sha256_traduzido": "cd0cd3f035005e2c2f524835fac95be289e9e24cff55c960ee33bac6f4129ab4",
    "bytes_original": 636277504,
    "jogo": "KINGDOM HEARTS II FINAL MIX",
    "atualizacoes": [
     {
-     "versao": "1.5",
+     "versao": "1.0",
      "de": "a7c22f75e9502e2470f831e0a3d2be1c269f1cb870ab80f61bb9f0c248e4d85a",
-     "delta": "kh2_first.pkg.de1_5.xdelta"
-    },
-    {
-     "versao": "1.6",
-     "de": "a7c22f75e9502e2470f831e0a3d2be1c269f1cb870ab80f61bb9f0c248e4d85a",
-     "delta": "kh2_first.pkg.de1_6.xdelta"
+     "delta": "kh2_first.pkg.de1_0.xdelta"
     },
     {
      "versao": "1.7",
      "de": "ffcbb297b9affe6f2fcaacf5d3da457332c9eaa17cde5ab3c169bff46c0e5e41",
      "delta": "kh2_first.pkg.de1_7.xdelta"
+    },
+    {
+     "versao": "1.9",
+     "de": "66bff18619cb4bd437a0544296c309ab490f70a22a30a21f0a66fcf8bb2f0f72",
+     "delta": "kh2_first.pkg.de1_9.xdelta"
+    },
+    {
+     "versao": "1.10",
+     "de": "b6d05f18ff1059043989871a33d758a1fb8a5fb5b3087b7940eb2051a7897004",
+     "delta": "kh2_first.pkg.de1_10.xdelta"
+    },
+    {
+     "versao": "1.11-texturas",
+     "de": "4e2f4483fa8fb7fca301b5eef6b030ae65422058185f8a9dc4ca6385a9ab3f5d",
+     "delta": "kh2_first.pkg.de1_11-texturas.xdelta"
     }
    ]
   },
@@ -361,24 +419,34 @@
    "destino": "dt/kh2_first.hed",
    "delta": "kh2_first.hed.xdelta",
    "sha256_original": "585077e10e38cd87d68f1b1147972361472bef47a08c98dbab4a8e0059e44e6c",
-   "sha256_traduzido": "083b2414dec022acebf7ce2e4484b07ed3c02e0e45d65f8766e4d0bcef928830",
+   "sha256_traduzido": "40f42f529f70a9a0d6d82d143bf6aa580e52759d3f6dd149062884a523dcab4c",
    "bytes_original": 35712,
    "jogo": "KINGDOM HEARTS II FINAL MIX",
    "atualizacoes": [
     {
-     "versao": "1.5",
+     "versao": "1.0",
      "de": "e33f556cfc3f35b26d51256e91d996bee8eda61092076fb0d7828602177e8e19",
-     "delta": "kh2_first.hed.de1_5.xdelta"
-    },
-    {
-     "versao": "1.6",
-     "de": "e33f556cfc3f35b26d51256e91d996bee8eda61092076fb0d7828602177e8e19",
-     "delta": "kh2_first.hed.de1_6.xdelta"
+     "delta": "kh2_first.hed.de1_0.xdelta"
     },
     {
      "versao": "1.7",
      "de": "611ba82a9f88217e6c77cdd9f8fc252fd7cda52c6ff3c0ea2e9303c50a2c9e12",
      "delta": "kh2_first.hed.de1_7.xdelta"
+    },
+    {
+     "versao": "1.9",
+     "de": "083b2414dec022acebf7ce2e4484b07ed3c02e0e45d65f8766e4d0bcef928830",
+     "delta": "kh2_first.hed.de1_9.xdelta"
+    },
+    {
+     "versao": "1.10",
+     "de": "ec8b0b4977b4d0ac18fb869eddb0496cd2049264851d7229ba29b9d3a252cddd",
+     "delta": "kh2_first.hed.de1_10.xdelta"
+    },
+    {
+     "versao": "1.11-texturas",
+     "de": "dc6ed18a68437fb74ce64fabf4a571c0e9cf07dbd99b446593190dfeb1443552",
+     "delta": "kh2_first.hed.de1_11-texturas.xdelta"
     }
    ]
   },
@@ -386,7 +454,7 @@
    "destino": "dt/kh2_fifth.pkg",
    "delta": "kh2_fifth.pkg.xdelta",
    "sha256_original": "85225a9e06bd362b21e36386b0ede9f4d38d37246e4e96fdc5960020310b2fca",
-   "sha256_traduzido": "0ef8f7cd6c50dc3a60984cbb1dd3d2d1001030d8c0cb2505a663aa0b0202f022",
+   "sha256_traduzido": "1e98dc73c9ee520b71ef18265bf89df7aafb3bf9f1c1ca905ad4eeb15d8a943c",
    "bytes_original": 10861312272,
    "jogo": "KINGDOM HEARTS II FINAL MIX",
    "atualizacoes": [
@@ -394,6 +462,21 @@
      "versao": "1.0",
      "de": "9c74c62f91bd052367249e057e49b2b36086c395e3fb399162a71eefdefa4a6e",
      "delta": "kh2_fifth.pkg.de1_0.xdelta"
+    },
+    {
+     "versao": "1.9",
+     "de": "0ef8f7cd6c50dc3a60984cbb1dd3d2d1001030d8c0cb2505a663aa0b0202f022",
+     "delta": "kh2_fifth.pkg.de1_9.xdelta"
+    },
+    {
+     "versao": "1.10",
+     "de": "991f8f1efd3b0af7c5fb0ea67608681071588fbc3309f18b21cd45b80ac8707a",
+     "delta": "kh2_fifth.pkg.de1_10.xdelta"
+    },
+    {
+     "versao": "1.11-texturas",
+     "de": "7e79a9b071ecea459d82106051b2cdb3c5ddb94a2449a36a229f6854b79359d6",
+     "delta": "kh2_fifth.pkg.de1_11-texturas.xdelta"
     }
    ]
   },
@@ -401,7 +484,7 @@
    "destino": "dt/kh2_fifth.hed",
    "delta": "kh2_fifth.hed.xdelta",
    "sha256_original": "4d2ccadcb01e40f4aa3b8568906e1bb70319075f2afccd332aa42cfdf3b6beb7",
-   "sha256_traduzido": "ffd1a52c1ef421df0b335e8d9bd9d41796dfc8bb0a004c03029c49f806c0c66f",
+   "sha256_traduzido": "e4de4e6d3eaac1df3c6d863425d266fcdd933553da039729afd147e9067febeb",
    "bytes_original": 287840,
    "jogo": "KINGDOM HEARTS II FINAL MIX",
    "atualizacoes": [
@@ -409,6 +492,21 @@
      "versao": "1.0",
      "de": "6a1551ca9013888954f2c5d32e265e9bec2be36f6023be58bd3c0cc372660082",
      "delta": "kh2_fifth.hed.de1_0.xdelta"
+    },
+    {
+     "versao": "1.9",
+     "de": "ffd1a52c1ef421df0b335e8d9bd9d41796dfc8bb0a004c03029c49f806c0c66f",
+     "delta": "kh2_fifth.hed.de1_9.xdelta"
+    },
+    {
+     "versao": "1.10",
+     "de": "f214124f57b4de35e734cf9591bc129da7732dde8427cfbfaa3e0babafab3bf8",
+     "delta": "kh2_fifth.hed.de1_10.xdelta"
+    },
+    {
+     "versao": "1.11-texturas",
+     "de": "bec7f9ae805bb8d9b57d0512d6af8533181c5aa4585026a5951f23f2a97cb0df",
+     "delta": "kh2_fifth.hed.de1_11-texturas.xdelta"
     }
    ]
   }
