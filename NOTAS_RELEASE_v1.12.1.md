@@ -22,5 +22,6 @@ Rode o instalador por cima, como sempre. Ele reconhece a versão pelo
 **SHA-256** de cada arquivo e aplica só a diferença — vale para qualquer versão
 de 1.0 a 1.12, inclusive as duas variantes da 1.11.
 
-Os vídeos legendados não mudaram: o pacote de vídeos continua o da 1.0,
-[na release v1.0](https://github.com/WenderSky/kingdom-hearts-1-5-2-5-remix-ptbr/releases/tag/v1.0).
+O pacote de vídeos (`KH_Videos_PTBR_v1.0.zip`) também está anexado nesta
+release — os vídeos não mudaram desde a 1.0, e quem já os instalou não
+precisa baixar de novo.

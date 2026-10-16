@@ -49,8 +49,8 @@ Até a 1.11 a tradução saía em duas variantes (`KH_PTBR`, só texto, e
 letreiros completos, desde a **1.12** é um pacote só. Quem tem **qualquer uma
 das duas** atualiza rodando o instalador por cima.
 
-O `KH_PTBR` fica anexado na **release mais recente**; o de vídeos, na
-**release v1.0** (os vídeos não mudaram desde então).
+Os dois ficam anexados na **release mais recente**, não precisa procurar
+em versão antiga.
 
 ---
 
