@@ -14,21 +14,18 @@ ainda acabam vazando da caixa.
 
 [h1]📥 Como instalar[/h1]
 
-[b]Um patch só traduz os seis jogos.[/b] Não há um pacote por jogo. São três
-arquivos, e você escolhe [b]um dos dois primeiros[/b]:
+[b]Um patch só traduz os seis jogos.[/b] Não há um pacote por jogo. São dois
+arquivos:
 
 [table]
 [tr][th]pacote[/th][th]o que faz[/th][/tr]
-[tr][td][b]KH_PTBR[/b][/td][td]a tradução de texto, completa[/td][/tr]
-[tr][td][b]KH_PTBR_Texturas[/b][/td][td]o mesmo, [b]mais[/b] os letreiros de sala redesenhados[/td][/tr]
-[tr][td][b]KH_Videos_PTBR[/b][/td][td]legenda os 10 vídeos que têm texto pintado na imagem[/td][/tr]
+[tr][td][b]KH_PTBR[/b][/td][td]a tradução completa: o texto dos seis jogos e toda a arte já redesenhada, com [b]todos os letreiros de sala do KH2[/b][/td][/tr]
+[tr][td][b]KH_Videos_PTBR[/b][/td][td]opcional: legenda os 10 vídeos que têm texto pintado na imagem[/td][/tr]
 [/table]
 
-[b]Os dois primeiros têm o texto idêntico[/b] — a diferença é só a arte.
-As texturas ainda estão sendo refeitas aos poucos, então quem instalar o pacote
-com elas vai andar de uma sala com a placa em português para outra ainda em
-inglês. Se isso incomodar mais do que a placa em inglês, instale o
-[b]KH_PTBR[/b] e espere fechar. [b]Dá para trocar de um para o outro depois[/b],
+Até a versão 1.11 havia dois pacotes de tradução (só texto, e texto +
+texturas). Desde a [b]1.12[/b] é um só. [b]Quem tem qualquer versão
+anterior, de qualquer um dos dois, atualiza rodando o instalador por cima[/b],
 sem reinstalar o jogo e sem perder save.
 
 [b]Windows:[/b] extraia e clique duas vezes em [b]Instalar.bat[/b].
@@ -87,11 +84,10 @@ com a letra desenhada dentro[/b] — o letreiro que passa ao entrar numa sala,
 texto: é imagem, e a Square fez uma versão de cada uma para cada idioma. Cada
 uma tem de ser [b]redesenhada à mão[/b].
 
-[b]Hoje: 6% delas estão em português[/b] — e esse número sobe a cada versão.
+[b]Hoje: 17% delas estão em português[/b] — e esse número sobe a cada versão.
 
-A frente que está andando agora são os [b]letreiros de sala do KINGDOM HEARTS
-II[/b]: o Twilight Town inteiro já está pronto, e o Hollow Bastion está em
-andamento.
+Os [b]letreiros de sala do KINGDOM HEARTS II[/b] estão completos desde a 1.12:
+todos os 229 que têm nome a traduzir, nos quinze mundos.
 
 [hr][/hr]
 
