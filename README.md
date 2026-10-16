@@ -4,9 +4,9 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.12-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.12.1-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/texto-100%25-success?style=for-the-badge)
-![Texturas](https://img.shields.io/badge/texturas-17%25-orange?style=for-the-badge)
+![Texturas](https://img.shields.io/badge/texturas-21%25-orange?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
 
@@ -57,26 +57,33 @@ O `KH_PTBR` fica anexado na **release mais recente**; o de vídeos, na
 ## 🖼️ Texturas: quanto já está em português
 
 O texto está 100% há versões. O que ainda aparece em inglês é **arte com a
-letra desenhada dentro** — letreiro de sala, `CLEAR!`, `NEW RECORD`, tela de
-tutorial, quadro de aviso. Cada uma tem de ser redesenhada à mão, uma a uma, e
-este quadro sobe a cada lote:
+letra desenhada dentro** — as telas das missões do KH2 (`CLEAR!`,
+`NEW RECORD`, as regras de cada uma), o menu de comandos de batalha
+(`COMMANDS`), parte do HUD (`OBTAINED MUNNY!`, `NEXT LEVEL`) e a interface do
+Re:CoM. Cada uma tem de ser redesenhada, e este quadro sobe a cada lote:
 
-| jogo | texturas com texto | em português | |
+| jogo | imagens com texto | em português | |
 |---|---:|---:|---|
 | KINGDOM HEARTS FINAL MIX | 64 | 11 | 17% |
-| Re:Chain of Memories | 162 | 2 | 1% |
-| KINGDOM HEARTS II FINAL MIX | 1428 | 264 | 18% |
-| Birth by Sleep | 75 | 15 | 20% |
-| **total** | **1729** | **292** | **17%** |
+| Re:Chain of Memories | 159 | 2 | 1% |
+| KINGDOM HEARTS II FINAL MIX | 935 | 223 | 24% |
+| Birth by Sleep | 54 | 15 | 28% |
+| **total** | **1212** | **251** | **21%** |
+
+Já em português no KH2: **os letreiros de sala**, o `OBTIDO` e o `NÍVEL ↑!`
+do HUD, o quadro de empregos (`PRECISA-SE`), os cartões do prólogo e as telas
+de tutorial de habilidades, auto-reload e regras do Struggle.
 
 Os **letreiros de sala do KH2** estão completos desde a 1.12: **todos os 229
 que têm nome a traduzir**, nos quinze mundos. Os outros 4 dos 233 são
 `CASTLE OBLIVION`, `AGRABAH` e `PRIDE ROCK` sozinhos, nomes próprios que a
 tradução sempre manteve em inglês.
 
-<sub>A conta é automática: vale como "textura com texto" toda arte que o jogo
+<sub>A conta é automática: vale como "imagem com texto" toda arte que o jogo
 guarda numa cópia por idioma **e** cujo conteúdo muda entre eles — é assim que
-a própria Square marca o que tem letra dentro.</sub>
+a própria Square marca o que tem letra dentro. Cada imagem conta **uma vez**,
+mesmo que se repita em vários pacotes (o `CLEAR!` aparece em dezenas de
+missões). Até a 1.12 a conta era por cópia, e o KH2 aparecia com 1428 e 18%.</sub>
 
 ---
 
@@ -149,6 +156,14 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## 🐛 O que mudou na 1.12.1
+
+| | |
+|---|---|
+| **358/2 Days: o jogo fechava na nota secreta do dia 225** | só em português ([issue #1](../../issues/1)). A nota traduzida tinha 785 caracteres, e nenhum texto desse diário, em nenhum idioma oficial, passa de 779 — o jogo reserva um espaço fixo para cada nota. Reescrita mais enxuta (741 caracteres, 14 linhas), sem perder conteúdo. É a única mudança desta versão |
 
 ---
 

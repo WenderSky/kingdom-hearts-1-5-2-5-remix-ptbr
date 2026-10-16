@@ -4,7 +4,7 @@
 
 ### A coletânea inteira em português. Um patch só.
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.12-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.12.1-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
 ![Download](https://img.shields.io/badge/download-118_MB-orange?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
@@ -127,6 +127,14 @@ antes e depois — é por ele que se confere se deu certo.
 
 Traduz-se **tudo o que descreve** (efeito de item, ficha de inimigo, resumo do
 Diário) e **todo comando de interação** — é o que você lê na hora de agir.
+
+---
+
+## 🐛 O que mudou na 1.12.1
+
+| | |
+|---|---|
+| **358/2 Days: o jogo fechava na nota secreta do dia 225** | só em português. A nota traduzida tinha 785 caracteres, e nenhum texto desse diário, em nenhum idioma oficial, passa de 779 — o jogo reserva um espaço fixo para cada nota. Reescrita mais enxuta (741 caracteres, 14 linhas), sem perder conteúdo. É a única mudança desta versão |
 
 ---
 

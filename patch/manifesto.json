@@ -1,5 +1,5 @@
 {
- "versao": "1.12",
+ "versao": "1.12.1",
  "jogo": "KINGDOM HEARTS HD 1.5+2.5 ReMIX",
  "conteudo": "tradução PT-BR de texto — a coletânea inteira",
  "arquivos": [
@@ -232,7 +232,7 @@
    "destino": "Mare.pkg",
    "delta": "Mare.pkg.xdelta",
    "sha256_original": "5a3a20283ce7dd2edcd9c96a898c4a6d00c03d5592f3e06f3caaafb7e32980b1",
-   "sha256_traduzido": "dc3417b60f9847f361824e61ba042d1959e103a937f4df40861835b42661316d",
+   "sha256_traduzido": "9cea65b73884e379c4582d5b7b31e71f48577c5d870d768edafb77ba72fb7b7a",
    "bytes_original": 2750086080,
    "jogo": "KINGDOM HEARTS FINAL MIX + KINGDOM HEARTS 358/2 Days e Re:coded",
    "atualizacoes": [
@@ -245,6 +245,11 @@
      "versao": "1.6",
      "de": "b1b5aab9719583c5efa3421529766b7386566813ce78c1cd1976e055ab16c0cc",
      "delta": "Mare.pkg.de1_6.xdelta"
+    },
+    {
+     "versao": "1.9",
+     "de": "dc3417b60f9847f361824e61ba042d1959e103a937f4df40861835b42661316d",
+     "delta": "Mare.pkg.de1_9.xdelta"
     }
    ]
   },
@@ -252,9 +257,16 @@
    "destino": "Mare.hed",
    "delta": "Mare.hed.xdelta",
    "sha256_original": "1e5e8fb26cf0eb52e2c37a542bc3218fcf3c48b286c8495109af73c3777e420f",
-   "sha256_traduzido": "9b36f7e47b48a77d53944c9cb1afe9df346e09fbe36f45786fc804b453120a89",
+   "sha256_traduzido": "2ebbd201c20e6115570bcb1259478ef9947cf65ff120579e778b3c7a9e1433e5",
    "bytes_original": 64768,
-   "jogo": "KINGDOM HEARTS FINAL MIX + KINGDOM HEARTS 358/2 Days e Re:coded"
+   "jogo": "KINGDOM HEARTS FINAL MIX + KINGDOM HEARTS 358/2 Days e Re:coded",
+   "atualizacoes": [
+    {
+     "versao": "1.5",
+     "de": "9b36f7e47b48a77d53944c9cb1afe9df346e09fbe36f45786fc804b453120a89",
+     "delta": "Mare.hed.de1_5.xdelta"
+    }
+   ]
   },
   {
    "destino": "dt/Recom.pkg",
