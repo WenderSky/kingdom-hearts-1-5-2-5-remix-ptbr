@@ -4,9 +4,9 @@
 
 ### A coletânea inteira em português brasileiro
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.11-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.12-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/texto-100%25-success?style=for-the-badge)
-![Texturas](https://img.shields.io/badge/texturas-6%25-orange?style=for-the-badge)
+![Texturas](https://img.shields.io/badge/texturas-17%25-orange?style=for-the-badge)
 ![Trechos](https://img.shields.io/badge/36.562_trechos-1,7_milh%C3%A3o_de_caracteres-9b59b6?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
 
@@ -34,29 +34,23 @@ Infelizmente alguns textos acabam vazando da caixa.
 
 ---
 
-## 📦 São três pacotes
+## 📦 São dois pacotes
 
 | pacote | o que faz |
 |---|---|
-| **`KH_PTBR`** | a tradução de texto dos seis jogos, completa |
-| **`KH_PTBR_Texturas`** | o mesmo, **mais** os letreiros de sala redesenhados |
+| **`KH_PTBR`** | a tradução dos seis jogos — o texto inteiro e toda a arte já redesenhada, incluindo **todos os letreiros de sala do KH2** |
 | **`KH_Videos_PTBR`** | legenda os 10 vídeos que têm o texto pintado na imagem |
 
-**Escolha um dos dois primeiros, não os dois.** Eles são a mesma tradução; o
-segundo só acrescenta a arte.
+O pacote de vídeos é **opcional e independente**: vídeo legendado é
+recodificado, então não cabe num patch pequeno.
 
-Por que existe essa escolha: os letreiros de sala são **imagem**, com as letras
-desenhadas dentro, e estão sendo refeitos aos poucos (veja o quadro abaixo).
-Enquanto não fecham, quem instalar o pacote com texturas vai andar de uma sala
-com a placa em português para outra ainda em inglês. Se isso incomodar mais do
-que a placa em inglês, instale o **`KH_PTBR`** e espere — o texto é o mesmo nos
-dois, e dá para trocar de um para o outro depois sem reinstalar o jogo.
+Até a 1.11 a tradução saía em duas variantes (`KH_PTBR`, só texto, e
+`KH_PTBR_Texturas`), porque os letreiros ainda estavam pela metade. Com os
+letreiros completos, desde a **1.12** é um pacote só. Quem tem **qualquer uma
+das duas** atualiza rodando o instalador por cima.
 
-O pacote de vídeos é **opcional e independente** dos outros dois: vídeo
-legendado é recodificado, então não cabe num patch pequeno.
-
-Os três zips ficam anexados na **release mais recente**, não precisa procurar
-em versão antiga.
+O `KH_PTBR` fica anexado na **release mais recente**; o de vídeos, na
+**release v1.0** (os vídeos não mudaram desde então).
 
 ---
 
@@ -71,12 +65,14 @@ este quadro sobe a cada lote:
 |---|---:|---:|---|
 | KINGDOM HEARTS FINAL MIX | 64 | 11 | 17% |
 | Re:Chain of Memories | 162 | 2 | 1% |
-| KINGDOM HEARTS II FINAL MIX | 1428 | 82 | 6% |
+| KINGDOM HEARTS II FINAL MIX | 1428 | 264 | 18% |
 | Birth by Sleep | 75 | 15 | 20% |
-| **total** | **1729** | **110** | **6%** |
+| **total** | **1729** | **292** | **17%** |
 
-E os **letreiros de sala do KH2**, que é a frente que está andando agora:
-**47 de 233 — 20%**. Twilight Town inteiro pronto, Hollow Bastion em andamento.
+Os **letreiros de sala do KH2** estão completos desde a 1.12: **todos os 229
+que têm nome a traduzir**, nos quinze mundos. Os outros 4 dos 233 são
+`CASTLE OBLIVION`, `AGRABAH` e `PRIDE ROCK` sozinhos, nomes próprios que a
+tradução sempre manteve em inglês.
 
 <sub>A conta é automática: vale como "textura com texto" toda arte que o jogo
 guarda numa cópia por idioma **e** cujo conteúdo muda entre eles — é assim que
@@ -86,7 +82,7 @@ a própria Square marca o que tem letra dentro.</sub>
 
 ## 💾 Instalação
 
-### Tradução (texto)
+### Tradução
 
 **Windows:** extraia e clique duas vezes em **`Instalar.bat`**.
 **Steam Deck:** `chmod +x SteamDeck/instalar.sh && ./SteamDeck/instalar.sh`
@@ -153,6 +149,23 @@ de texto e de imagem. **Se achar algo, abra uma issue** com o print e onde foi.
 Zezinho e Luisinho · Tico e Teco · Tio Patinhas · Abel, Leitão, Tigrão e Ió ·
 Timão e Pumba · Flora, Fauna e Primavera · Pérola Negra. E o bordão do Axel é o
 mesmo nos quatro jogos em que aparece: *"Guarda bem isso, hein?"*
+
+---
+
+## 🪧 O que mudou na 1.12
+
+| | |
+|---|---|
+| **Todos os letreiros de sala do KH2** | o cartão que aparece ao entrar numa área (`THE USUAL SPOT` → **`O PONTO DE SEMPRE`**) é imagem, não texto. A 1.11 trazia 47; agora são **todos os 229 com nome a traduzir**, nos quinze mundos |
+| **A placa diz o mesmo que o menu** | o nome no letreiro é o mesmo do canto do menu e das falas |
+| **Onde o jogo usa uma fonte** | o português foi escrito com uma fonte igual ou parecida, encaixada contra o original (tamanho, posição e régua). Onde a letra é desenhada à mão, cada letreiro foi redesenhado no estilo do mundo — no 100 Acre Wood as placas dizem **`CAZA`**, com Z, de propósito, como o `HOWSE` do inglês |
+| **Três nomes de sala acertados** | `Cruzo de Fragmentos` → **`Travessia de Fragmentos`**; `O Bosque` → **`A Floresta`**; `A Pérola Negra: Cabine do Capitão` → **`Pérola Negra: Cabine do Capitão`**. São as únicas mudanças de texto desta versão |
+| **Um pacote só** | sem a divisão da 1.11 entre "texto" e "texto + texturas" |
+
+**Fontes usadas nos letreiros** (só as imagens prontas vão no pacote, não as
+fontes): KHTitle (Televo), Diogenes (Apostrophic Labs), Tron (Paul Albers),
+Jost (indestructible type), Marcellus SC e Eagle Lake (Astigmatic), Londrina
+Solid (Marcelo Magalhães).
 
 ---
 
@@ -417,13 +430,9 @@ Tudo aqui saiu de relatos de quem instalou a 1.0 e jogou.
 
 | pasta | conteúdo |
 |---|---|
-| **`patch/`** | o pacote **de texto** — os patches, o instalador e o manifesto |
+| **`patch/`** | o pacote da tradução — os patches, o instalador e o manifesto (o mesmo conteúdo do `KH_PTBR_vX.Y.zip` da release) |
 | **`videos/`** | o leia-me do pacote de vídeos (os `.mp4` vão nos Releases: 1,74 GB) |
 | **`steam/`** | o guia da Steam em BBCode e a capa dele |
-
-O pacote **com texturas** não fica no repositório: ele só muda dois arquivos em
-relação ao de texto, e guardar os dois aqui dobraria o tamanho a cada versão.
-Ele está anexado na **release**, como `KH_PTBR_vX.Y_Texturas.zip`.
 
 ---
 

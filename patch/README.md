@@ -4,23 +4,24 @@
 
 ### A coletânea inteira em português. Um patch só.
 
-![Versão](https://img.shields.io/badge/vers%C3%A3o-1.11-blue?style=for-the-badge)
+![Versão](https://img.shields.io/badge/vers%C3%A3o-1.12-blue?style=for-the-badge)
 ![Jogos](https://img.shields.io/badge/6_jogos-100%25-success?style=for-the-badge)
-![Download](https://img.shields.io/badge/download-95_MB-orange?style=for-the-badge)
+![Download](https://img.shields.io/badge/download-118_MB-orange?style=for-the-badge)
 ![Plataforma](https://img.shields.io/badge/Steam-Windows_%7C_Steam_Deck-1b2838?style=for-the-badge&logo=steam)
 
 </div>
 
 ---
 
-> ### 📦 Este é o pacote **de texto**
+> ### 📦 Um pacote só, com tudo
 >
-> Traduz o texto dos seis jogos, mais toda a arte que já está 100%.
-> **Não traz os letreiros de sala**, que ainda estão sendo redesenhados.
+> Traduz o texto dos seis jogos e traz **todos os letreiros de sala** do
+> KINGDOM HEARTS II redesenhados em português — os 229 que têm nome a
+> traduzir, nos quinze mundos.
 >
-> Se você prefere já ver as placas em português mesmo com parte delas ainda em
-> inglês, baixe o **`KH_PTBR_v1.11_Texturas.zip`** na mesma release. O texto é
-> idêntico nos dois, e dá para trocar de um para o outro depois.
+> A 1.11 saía em duas variantes (só texto, e texto + texturas). Quem tem
+> **qualquer uma das duas**, ou qualquer versão desde a 1.0, atualiza rodando o
+> instalador por cima.
 
 ---
 
@@ -80,7 +81,7 @@ pacote:
 .\xdelta3.exe -d -f -s "<arquivo do jogo>" "patch\<nome>.xdelta" "<arquivo do jogo>"
 ```
 
-O **`manifesto.json`** lista os 22 arquivos, o delta de cada um e o SHA-256
+O **`manifesto.json`** lista os 26 arquivos, o delta de cada um e o SHA-256
 antes e depois — é por ele que se confere se deu certo.
 
 > 💡 **No Steam Deck, arrastar pelo cabo costuma ser mais rápido** que abrir o
@@ -126,6 +127,23 @@ antes e depois — é por ele que se confere se deu certo.
 
 Traduz-se **tudo o que descreve** (efeito de item, ficha de inimigo, resumo do
 Diário) e **todo comando de interação** — é o que você lê na hora de agir.
+
+---
+
+## 🪧 O que mudou na 1.12
+
+| | |
+|---|---|
+| **Todos os letreiros de sala do KH2** | o cartão que aparece ao entrar numa área (`THE USUAL SPOT` → **`O PONTO DE SEMPRE`**) é imagem, não texto. A 1.11 trazia 47; agora são **todos os 229 com nome a traduzir**, nos quinze mundos. `CASTLE OBLIVION`, `AGRABAH` e `PRIDE ROCK` sozinhos ficam em inglês, como sempre ficaram |
+| **A placa diz o mesmo que o menu** | o nome no letreiro é o mesmo do canto do menu e das falas |
+| **Onde o jogo usa uma fonte** | o português foi escrito com uma fonte igual ou parecida, encaixada contra o original (tamanho, posição e régua). Onde a letra é desenhada à mão, cada letreiro foi redesenhado no estilo do mundo — no 100 Acre Wood as placas dizem **`CAZA`**, com Z, de propósito, como o `HOWSE` do inglês |
+| **Três nomes de sala acertados** | `Cruzo de Fragmentos` → **`Travessia de Fragmentos`**; `O Bosque` → **`A Floresta`**; `A Pérola Negra: Cabine do Capitão` → **`Pérola Negra: Cabine do Capitão`**. São as únicas mudanças de texto desta versão |
+| **Um pacote só** | sem a divisão da 1.11 entre "texto" e "texto + texturas" |
+
+**Fontes usadas nos letreiros** (só as imagens prontas vão no pacote, não as
+fontes): KHTitle (Televo), Diogenes (Apostrophic Labs), Tron (Paul Albers),
+Jost (indestructible type), Marcellus SC e Eagle Lake (Astigmatic), Londrina
+Solid (Marcelo Magalhães).
 
 ---
 
